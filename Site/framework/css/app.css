@@ -2294,7 +2294,7 @@ ul.th-grid li.loading-block { position: relative; width: 196px; height: 206px; b
 ul.th-grid li.loading-block img { position: absolute; left: 50%; margin-left: -16px; top: 70px; }
 ul.th-grid li.loading-block p { width: 166px; word-wrap: break-word; text-align: center; font-size: 14px; padding: 0 15px; position: absolute; bottom: 15px; }
 
-.complete-text { background: url(/images/meow/icons/24px/archive-green.png) no-repeat 8px 9px #e2f1d7; padding: 8px 8px 8px 30px; margin-bottom: 20px; border: 1px solid #c4dbb3; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; color: #384230; }
+.complete-text { background: url(../asset/archive-green.png) no-repeat 8px 9px #e2f1d7; padding: 8px 8px 8px 30px; margin-bottom: 20px; border: 1px solid #c4dbb3; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; color: #384230; }
 
 /*-----------------------------------
 	Structural Classes
@@ -2358,7 +2358,7 @@ ul.th-grid li.loading-block p { width: 166px; word-wrap: break-word; text-align:
 		position: absolute;
 		left: 50%;
 		margin-left: -70px;
-		background: rgba(0,0,0,.8) url(../images/meow/post-page-add-notes-icon.png) no-repeat 10px center;
+		background: rgba(0,0,0,.8) url(../asset/post-page-add-notes-icon.png) no-repeat 10px center;
 		display: block;
 		top: 50%;
 		margin-top: -20px;
@@ -2403,7 +2403,7 @@ ul.th-grid li.loading-block p { width: 166px; word-wrap: break-word; text-align:
 		background-repeat: no-repeat;
 	}
 	#postImageContainer ul.image-actions li.download-image a {
-		background-image: url(../images/meow/post-page-download-icon.png);
+		background-image: url(../asset/post-page-download-icon.png);
 	}
 	#postImageContainer ul.image-actions li.replace-image a {
 		background-image: url(../images/meow/post-page-swap-image-icon.png);
