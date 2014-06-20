@@ -1,0 +1,173 @@
+	/*	Note Icons ---------- */
+	ol.notes { width: auto; margin: 0 0 18px 1px; padding: 0; list-style: none; }
+	ol.notes>li { font-size: 13px; padding: 3px 0 8px; position: relative; min-height: 21px; margin: 0 0 8px 0;  }
+	ol.notes>li:last-child { margin: 0; padding-bottom: 0; }
+	ol.notes>li div.notes-body { margin: -10px 0 0 0; padding: 1px 0 0 30px; min-height: 25px; }
+	ol.notes>li div.notes-body p { margin-bottom: 5px; word-break: break-word; }
+	ol.notes>li div.notes-body p a {color: #555;text-decoration: underline; }
+	ol.notes>li div.notes-body p a:hover { color: #333; }
+	ol.notes>li div.notes-body div { padding: 0; margin: 0; }
+	ol.notes>li div.notes-body div:last-line { white-space: nowrap; }
+	
+	ol.notes .count, 
+	ol.notes .count:visited, 
+	span.note { display: block; position: absolute; top: -2px; left: 0; z-index: 10; background: #111; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 2px solid #fff; no-repeat 0 0; width: 21px; height: 21px; font-size: 12px; font-weight: bold; line-height: 21px; letter-spacing: -1px; text-align: center; color: #fff; text-decoration: none; text-shadow: 0 1px 1px rgba(0,0,0,.15); }
+	ol.notes span.note { position: absolute; left: 0px; top: 0px; }
+	ol#ownerNotes span.note { float: left; }
+	.comment p span.body-text a { color: #555;text-decoration: underline; font-weight: normal;}
+
+	/* Owner screenshot notes */
+	body#showPage div.notes-list { margin: 0 0 10px 0; }
+	body#showPage div.notes-list div.note { width: 50px; float: left; display: inline; margin: 0 0 0 5px; position: relative; }
+	body#showPage div.notes-list div.text { width: 220px; float: left; display: inline; margin: -2px 0; position: relative; }
+	body#showPage div.notes-list:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	* html body#showPage div.notes-list { height: 1%; }
+	body#showPage div.notes-list { display: inline-block; }
+	body#showPage div.notes-list { display: block; }
+	
+	/* Link to note page */
+	.note {text-decoration: none; color: black; }
+
+	/* Styles for inline notes (visual here) */
+	span.note.inline { display: -moz-inline-box; display: inline-block; position: relative; top: 0; width: 24px; height: 24px; text-align: center; margin-top: -7px; line-height: 24px; border: none; }
+	span.note.inline span { display: block; letter-spacing: -1px; font-weight: bold; text-align: center; color: #fff; text-decoration: none; }
+	body.ff span.note.inline span { letter-spacing: 0px; }
+	
+	/* Styles for inline code, copy, seo notes */
+	span.note.inline.code, 
+	span.note.inline.copy, 
+	span.note.inline.seo { width: 50px; padding: 0 2px; text-align: right; top: 7px;}
+	span.note.inline.code span, 
+	span.note.inline.copy span, 
+	span.note.inline.seo span { display: block; float: left; width: 22px; height: 25px; padding: 0 2px 0 26px !important; font-size: 12px; line-height: 25px; }
+	
+	/* Default Visual Notes */
+	span.note.green { background-position: 0 0; }
+	span.note.blue { background-position: -25px 0; }
+	span.note.magenta { background-position: -50px 0; }
+	span.note.red { background-position: -75px 0; }
+	span.note.orange { background-position: -100px 0; }
+	span.note.yellow { background-position: -125px 0; }
+	span.note.black { background-position: -150px 0; }
+	span.note.gray { background-position: -175px 0; }
+	span.note.white { background-position: -200px 0; }
+
+	/* Round Code, Copy, and SEO */
+	span.note.code.green,
+	span.note.copy.green,
+	span.note.seo.green { background-position: 0 -50px; }
+	span.note.code.blue,
+	span.note.copy.blue,
+	span.note.seo.blue { background-position: -54px -50px; }
+	span.note.code.magenta,
+	span.note.copy.magenta,
+	span.note.seo.magenta { background-position: -108px -50px; }
+	span.note.code.red,
+	span.note.copy.red,
+	span.note.seo.red { background-position: -162px -50px; }
+	span.note.code.orange,
+	span.note.copy.orange,
+	span.note.seo.orange { background-position: -216px -50px; }
+	span.note.code.yellow,
+	span.note.copy.yellow,
+	span.note.seo.yellow { background-position: -270px -50px; }
+	span.note.code.black,
+	span.note.copy.black,
+	span.note.seo.black { background-position: -324px -50px; }
+	span.note.code.gray,
+	span.note.copy.gray,
+	span.note.seo.gray { background-position: -378px -50px; }
+
+	/* Square Code, Copy, and SEO */
+	span.note.square.code.green,
+	span.note.square.copy.green,
+	span.note.square.seo.green { background-position: 0 -75px; }
+	span.note.square.code.blue,
+	span.note.square.copy.blue,
+	span.note.square.seo.blue { background-position: -54px -75px; }
+	span.note.square.code.magenta,
+	span.note.square.copy.magenta,
+	span.note.square.seo.magenta { background-position: -108px -75px; }
+	span.note.square.code.red,
+	span.note.square.copy.red,
+	span.note.square.seo.red { background-position: -162px -75px; }
+	span.note.square.code.orange,
+	span.note.square.copy.orange,
+	span.note.square.seo.orange { background-position: -216px -75px; }
+	span.note.square.code.yellow,
+	span.note.square.copy.yellow,
+	span.note.square.seo.yellow { background-position: -270px -75px; }
+	span.note.square.code.black,
+	span.note.square.copy.black,
+	span.note.square.seo.black { background-position: -324px -75px; }
+	span.note.square.code.gray,
+	span.note.square.copy.gray,
+	span.note.square.seo.gray { background-position: -378px -75px; }
+	
+	/* Position an image for the code, copy, and seo notes as our visual indicator */
+	span.note.inline.code span { background: url(/images/notes/notes-code.png) no-repeat 0 0; }
+	span.note.inline.copy span { background: url(/images/notes/notes-type.png) no-repeat 2px 0; }
+	span.note.inline.seo span { background: url(/images/notes/notes-seo.png) no-repeat 1px 0; }
+
+	/*	Fancy cross browser stuff ----- */
+	body.ff3 div.post-capture ol.notes .count, 
+	body.ff3 div.post-capture ol.notes .count:visited { width: 24px; padding-right: 1px; } /* account for ff3's bullshit */
+	body.ff3 ol.circle.notes .count, 
+	body.ff3 span.note 							{ opacity: .9999; }
+
+	ol.circle.notes .count span.wrap, 
+	ol.circle.notes .count:visited span.wrap, 
+	span.note span.wrap 						{ background: none; position: absolute; top: 0; left: 0; display: none; width: 25px; height: 25px; line-height: 1; padding: 0; }
+
+/*
+	body.safari ol.circle.notes .count span.wrap, 
+	body.safari ol.circle.notes .count:visited span.wrap, 
+	body.safari span.note span.wrap 			{ display: block; -webkit-border-radius: 12px; -webkit-box-shadow: 0 2px 3px #000; opacity: .5; }
+*/
+	
+  /*	Position all colors ----- */
+	ol.white.notes .count, span.white.note 		{ text-shadow: 0 1px 1px #fff; }
+	
+	/*	Regular notes (and green!) ----- */
+	ol.circle.notes .count, span.circle.note 	{ background-position: 0 0; }
+	ol.square.notes .count, span.square.note 	{ background-position: 0 -25px; }
+	ol.rsquare.notes .count, span.rsquare.note 	{ background-position: 0 -50px; }
+	
+	/*	Blue Notes ----- */
+	ol.blue.circle.notes .count, span.blue.circle.note 			{ background-position: -25px 0; }
+	ol.blue.square.notes .count, span.blue.square.note 			{ background-position: -25px -25px; }
+	
+	/*	Magenta Notes ----- */
+	ol.magenta.circle.notes .count, span.magenta.circle.note 	{ background-position: -50px 0; }
+	ol.magenta.square.notes .count, span.magenta.square.note 	{ background-position: -50px -25px; }
+	
+	/*	Red Notes ----- */
+	ol.red.circle.notes .count, span.red.circle.note 			{ background-position: -75px 0; }
+	ol.red.square.notes .count, span.red.square.note 			{ background-position: -75px -25px; }
+	
+	/*	Orange Notes ----- */
+	ol.orange.circle.notes .count, span.orange.circle.note 		{ background-position: -100px 0; }
+	ol.orange.square.notes .count, span.orange.square.note 		{ background-position: -100px -25px; }
+	
+	/*	Yellow Notes ----- */
+	ol.yellow.circle.notes .count, span.yellow.circle.note 		{ background-position: -125px 0; }
+	ol.yellow.square.notes .count, span.yellow.square.note 		{ background-position: -125px -25px; }
+	
+	/*	Black Notes ----- */
+	ol.black.circle.notes .count, span.black.circle.note 		{ background-position: -150px 0; }
+	ol.black.square.notes .count, span.black.square.note 		{ background-position: -150px -25px; }
+	
+	/*	Gray Notes ----- */
+	ol.gray.circle.notes .count, span.gray.circle.note 			{ background-position: -175px 0; }
+	ol.gray.square.notes .count, span.gray.square.note 			{ background-position: -175px -25px; }
+	
+	/*	White Notes ----- */
+	ol.white.notes .count, 
+	ol.white.notes .count:visited, span.white.note 				{ color: #777; }
+	ol.white.circle.notes .count, span.white.circle.note 		{ background-position: -200px 0; }
+	ol.white.square.notes .count, span.white.square.note 		{ background-position: -200px -25px; }
+	
+	/*	Notes below the cutoff ---------- */
+	ol.black.circle.notes .below, 
+	ol.black.circle.notes .below:visited 						{ background-position: -225px 0; height: 40px; width: 27px !important; margin: -18px 0 0; }
+	body.safari ol.black.notes .below span.wrap 				{ display: none; }

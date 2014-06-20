@@ -1,0 +1,40 @@
+/* Artfully masterminded by ZURB  */
+ 
+ 
+/* -----------------------------------------
+   Standard Forms
+----------------------------------------- */
+
+	form { margin: 0 0 18px; }
+	label { display: block; font-size: 13px; line-height: 18px; cursor: pointer; margin-bottom: 11px; }
+	
+	input.input-text, textarea, select { display: block; margin-bottom: 9px; font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+	label + input.input-text, label + textarea, label + select { margin-top: -9px; }
+	
+	/* Text input and textarea font and padding */
+	input.input-text, textarea { font-size: 13px; outline: none !important; color: #777; border: solid 1px #bbb; -webkit-border-radius: 3px; -moz-border-radius: 3px; padding: 6px 3px 4px; outline: none !important; background: url(../images/forms/input-bg.png) repeat-x #fff; }
+	input.input-text.oversize, textarea.oversize { font-size: 18px !important; padding: 4px 5px !important; }
+	input.input-text:focus, textarea:focus { color: #333; background-color: #f9f9f9; }
+
+	/* Text input and textarea sizes */
+	input.input-text, textarea { width: 254px; }
+	input.small, textarea.small { width: 134px; }
+	input.medium, textarea.medium { width: 254px; }
+	input.large, textarea.large { width: 434px; }
+	
+	input.not-so.large { width:320px; }
+	input.share.large { width:250px; padding-left: 10px; padding-right: 10px; }
+	
+	/* Fieldsets */
+	fieldset { padding: 9px 9px 2px 9px; border: solid 1px #ddd; margin: 18px 0; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+	
+	/* Errors */
+	input.input-text.red { border-color: red; background-color: rgba(255,0,0,0.15); }
+	label.red { color: red; }
+	small.error { display: block; margin-bottom: 9px; width: 260px; padding: 6px 4px; border: solid 0px red; border-width: 0px 1px 1px 1px; margin-top: -10px; background: red; color: #fff; font-size: 12px; font-weight: bold; -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px; -moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px; }
+	
+	.small + .error { width: 132px; }
+	.medium + .error { width: 252px; }
+	.large + .error { width: 432px; }
+	
+	

@@ -1,0 +1,61 @@
+/* font-face */
+@font-face {
+  font-family: 'ZURBappsIcons';
+  src: url('/fonts/zurbappsicons2.eot');
+  src: url('/fonts/zurbappsicons2.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/zurbappsicons2.woff') format('woff'),
+       url('/fonts/zurbappsicons2.ttf') format('truetype'),
+       url('/fonts/zurbappsicons2.svg#ZURBappsIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global foundicon styles */
+[class*="zurbicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+[class*="zurbicon-"]:before {
+  font-family: 'ZURBappsIcons';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+.zurbicon-views:before                { content: "\f000"; }
+.zurbicon-posts:before                { content: "\f001"; }
+.zurbicon-comments:before             { content: "\f002"; }
+.zurbicon-notes:before                { content: "\f003"; }
+.zurbicon-stats:before                { content: "\f004"; }
+.zurbicon-person:before               { content: "\f005"; }
+.zurbicon-clock:before                { content: "\f006"; }
+.zurbicon-compass:before              { content: "\f007"; }
+.zurbicon-enclosed-check:before       { content: "\f008"; }
+.zurbicon-check:before                { content: "\f009"; }
+.zurbicon-single-comment:before       { content: "\f00a"; }
+.zurbicon-forward:before              { content: "\f00b"; }
+.zurbicon-backward:before             { content: "\f00c"; }
+.zurbicon-grid:before                 { content: "\f00d"; }
+.zurbicon-download:before             { content: "\f00e"; }
+.zurbicon-mail:before                 { content: "\f00f"; }
+.zurbicon-info:before                 { content: "\f010"; }
+.zurbicon-thumb-up:before             { content: "\f011"; }
+.zurbicon-thumb-down:before           { content: "\f012"; }
+.zurbicon-single-left:before          { content: "\f013"; }
+.zurbicon-single-right:before         { content: "\f014"; }
+.zurbicon-skip:before                 { content: "\f015"; }
+.zurbicon-hotspot:before              { content: "\f016"; }
+.zurbicon-hs-box:before               { content: "\f017"; }
+.zurbicon-hs-arrow:before             { content: "\f018"; }
+.zurbicon-search:before               { content: "\f019"; }
+.zurbicon-pause:before                { content: "\f01a"; }
+.zurbicon-close:before                { content: "\f01b"; }
+.zurbicon-unread:before               { content: "\f01c"; }
+.zurbicon-click:before                { content: "\f02b"; }

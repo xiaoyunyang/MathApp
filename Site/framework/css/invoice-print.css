@@ -1,0 +1,9 @@
+
+	/* --------------------------------------------------
+	ZURB PRINT STYLES
+	-------------------------------------------------- */
+	.platform.top-bar { display: none !important; }
+	body { font-family: sans-serif; }
+	img { display: none; }
+	.dragndrop-overlay { display: none; }
+	footer { display: none; }

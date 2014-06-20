@@ -1,0 +1,248 @@
+/*    --------------------------------------------------
+   Live Chat Window
+   -------------------------------------------------- */
+	
+	
+	
+	/* BEGIN OLARK DEFAULT STYLES */
+			
+	/* change the name of this div, if we create new styles */
+	#habla_beta_container_do_not_rely_on_div_classes_or_names {/* common *//* window *//* Top Bar *//* common *//* common *//* common *//* common *//* make the chat form not have crazy borders *//* common *//* common *//* if long text is entered in the main input textarea, make it bigger *//* before text is entered have text be gray *//* give the input div extra margin *//* submit buttons *//* middle area *//* common *//* clear */ }
+
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_window_div_base {display: block !important;z-index: 9999999999;/* reset  the following options */ font-style: inherit; font-weight: inherit; line-height: 1; outline-color: -moz-use-text-color; outline-style: none; outline-width: 0; padding: 0; text-align: left; vertical-align: baseline;}
+    
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_topbar_div {padding: 4px; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_topbar_div_compressed {cursor: pointer; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_topbar_clickable {cursor: pointer; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_chatform_form {margin: 0;padding: 0; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .hbl_txt_wrapper {position: relative;padding-top: 2px;padding-left: 4px;padding-right: 4px;}
+    
+    /*reset all the textarea divs */ }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .hbl_txt_wrapper textarea {width: 100%; border: 0px !important;margin-right: 0px !important;margin-left: 0px !important; padding: 0px !important; line-height: 20px;height: 20px; overflow-y: hidden; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names div.hbl_long_text_entered textarea { height: 60px; overflow-y: auto; resize: none; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names textarea.habla_wcsend_input_normal {color: #707070; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_input_div .hbl_txt_wrapper {margin: 3px; background: #fff !important; -moz-box-shadow: inset 0 0 1px #969292; /*inner shadow*/ -webkit-box-shadow: inset 0 0 1px #969292; box-shadow: inset 0 0 1px #969292; padding: 0;} 
+   	#habla_beta_container_do_not_rely_on_div_classes_or_names input { margin-top: 5px; float: right; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div { line-height: 1.5em; /* padding for divs inside of wrapper */ /* common *//* common */ /* common *//* inside of  the middle div, have extra margin for textboxes *//* common *//* avatar *//* common *//* intent second line of text */ }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .hbl_panel { padding: 5px 0; }
+    #habla_offline_message_span {padding: 10px !important; display: block !important; font-family: "ProximaNova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 13px; line-height: 1.4;}
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div #habla_conversation_div {
+      /* make it scroll if it's too long */background: #f8f8f8 !important; overflow-x: auto; overflow-y: auto; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div #habla_conversation_div span#hbl_body_message {padding: 10px; font-size: 13px; font-family: "ProximaNova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;  display: block; line-height: 1.4; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div #habla_pre_chat_div {
+      /* make it scroll if it's too long */overflow-x: auto;overflow-y: auto; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .hbl_txt_wrapper {margin-top: 5px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .olrk_avatar {border: 1px solid lightgray; float: right;margin: 0 10px 10px 10px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_p_item {margin: 0 !important; padding: 5px 10px !important;text-indent: 0 !important;overflow: hidden; font-family: "ProximaNova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; }
+    
+    
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_p_item>span {display: block; float: left; width: 200px;  }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_p_item>span:first-child {width: 60px; color: #141414 !important; font-weight: bold;}
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_p_item span.olark-smiley-smile {width: auto; display: inline; padding: 0 3px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_p_item:nth-child(2n) {background: #f4f4f4; border: 0px solid #eee; border-width: 1px 0; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_p_item span.habla_conversation_person1 { text-indent: -9999px; background: url(/images/olark/olark-you-bg.png) -5px -2px no-repeat; }
+   url(../../../../Desktop/close-button.png) 
+    
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div p.habla_conversation_p_item {margin-left: 20px; text-indent: -20px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_person1 {padding-right: 5px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_person2 {padding-right: 5px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .clear_style {clear: both; }
+
+    #habla_beta_container_do_not_rely_on_div_classes_or_names {/* TODO: re-evaluate these state divs *//* end top bar */ }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names a.habla_oplink_a_hover:hover { color: #777474; font-weight: normal; text-decoration: none; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names a.habla_oplink_a_normal {color: white;font-weight: normal; text-decoration: none; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_sizebutton_a {  /*Top Button 1*/background-position: -80px top !important;}
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-state-expanded #habla_sizebutton_a { background-position: -96px top !important; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_button {float: right; margin-top: -7px; margin-left: -1px; color: rgba(196,196,198,.82) !important; padding: 0px; width: 32px; height: 24px; font-size: 18px !important; /*border: 1px solid #c4c5c8;*/ /*border-top-left-radius: 3px !important; border-bottom-left-radius: 3px !important; -moz-border-top-left-radius: 3px !important; -moz-border-bottom-left-radius: 3px !important; background-color: #f4f4f4; /*background-image: url(/images/olark/button-sprite.jpg) !important;background-position: 0 0 !important; background-repeat: no-repeat !important; cursor: pointer !important; /*Hide the Ascii buttons */ overflow: hidden; /*line-height: 1000px;*/ }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_state_div #habla_sizebutton_a {display: none; /*background-image: url(/images/olark/button-sprite.jpg) !important;background-position: -32px 0 !important;8*/}  /*Removed Min Button HERE --------*/
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_state_div #habla_closebutton_a { background-position: 0px 4px !important; background: url(/images/olark/close-button.png) -5px -2px no-repeat; margin-right: -24px !important; margin-top: -12px; font-size: 20px !important; line-height: 1000px; /*-moz-border-radius: 3px !important; border-radius: 3px !important;*/ /*border-top-left-radius: 0px !important;border-bottom-left-radius: 0px !important; -moz-border-top-left-radius: 0px !important;-moz-border-bottom-left-radius: 0px !important;border-top-right-radius: 3px !important;border-bottom-right-radius: 3px !important;-moz-border-top-right-radius: 3px !important;-moz-border-bottom-right-radius: 3px !important;*/ } /*Removed Border Radius for Min Button HERE --------*/
+  
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_state_div #habla_sizebutton_a:hover { /*background-position: -32px -24px !important;*/ }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_state_div #habla_closebutton_a:hover { padding-left: 0px; }
+	
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_button:hover { color: #777474; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_popout_a {background-position: -16px top !important; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_closebutton_a {background-position: 0px top !important; }
+
+	#habla_beta_container_do_not_rely_on_div_classes_or_names {/* common */ /* right to left support */ }
+  	#habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl {direction: rtl; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl #habla_middle_div {text-align: right;}
+    #habla_middle_div { /*background: #f8f8f8; border-right: 1px solid #BDBDBD; border-left: 1px solid #BDBDBD;*/ } /*added*/
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl #habla_middle_div .olrk_avatar {float: left; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl .habla_button {float: left; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl #habla_topbar_div {text-align: right; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl #habla_middle_wrapper_div p.habla_conversation_p_item {margin-right: 20px; text-indent: -20px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl #habla_middle_wrapper_div .habla_conversation_person1 {padding-left: 5px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .olrk-rtl #habla_middle_wrapper_div .habla_conversation_person2 {padding-left: 5px; }
+      
+	#habla_expanded_div div { background: #ececed; display: block; } /*added*/
+	#habla_expanded_div {background: #ececed; width: 300px; -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23); -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23); box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23);} /*added*/
+	#hblink99 {color: #ff9e00 !important;} /*added not working*/
+	#habla_expanded_div div a {color: red !important;} /*added*/	
+		
+		
+	@-webkit-keyframes tab_in_bottom {
+	  0% {
+	    margin-bottom: -50px;
+	    padding-bottom: 10px; }
+	
+	  50% {
+	    margin-bottom: 0px;
+	    padding-bottom: 15px; }
+	
+	  100% {
+	    padding-bottom: 10px; } }
+	
+	@-webkit-keyframes tab_in_top {
+	  0% {
+	    margin-top: -50px;
+	    padding-top: 10px; }
+	
+	  50% {
+	    margin-top: 0px;
+	    padding-top: 15px; }
+	
+	  100% {
+	    padding-top: 10px; } }
+
+	.olrk-state-compressed .olrk-fixed-bottom #habla_topbar_div {
+	  -webkit-animation-name: tab_in_bottom;
+	  -webkit-animation-duration: 1s;
+	  -webkit-animation-iteration-count: 1;
+	  -webkit-animation-direction: alternate;
+	  -webkit-animation-timing-function: ease-in-out; }
+	
+	.olrk-fixed-top .olrk-fixed-top #habla_topbar_div {
+	  -webkit-animation-name: tab_in_top;
+	  -webkit-animation-duration: 1s;
+	  -webkit-animation-iteration-count: 1;
+	  -webkit-animation-direction: alternate;
+	  -webkit-animation-timing-function: ease-in-out; }
+
+	#habla_beta_container_do_not_rely_on_div_classes_or_names {/* twitter bootstrap fix *//* Fix border-box */ /* add shadow */ /* Top Bar *//* submit buttons */ /* middle area */ }
+ 	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_div [class*="span"] {float: none; margin-left: 0; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_div * {box-sizing: content-box; -moz-box-sizing: content-box;-o-box-sizing: content-box; }
+  	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_window_div_base {-moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23); -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23);box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23); }
+  	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_window_div_base .olrk-fixed-top, #habla_beta_container_do_not_rely_on_div_classes_or_names .habla_window_div_base .olrk-fixed-bottom { border: 1px solid #e5e5e5; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_window_div_base .olrk-fixed-bottom {border-bottom: none; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_window_div_base .olrk-fixed-top {border-top: none; }
+	#habla_beta_container_do_not_rely_on_div_classes_or_names textarea.habla_wcsend_input_normal {color: #bbbbbb; }
+	#habla_wcsend_input {margin: 5px 0; resize: none !important;} /*added*/
+	#habla_beta_container_do_not_rely_on_div_classes_or_names .habla_topbar_div_highlighted {background: #c5511e none repeat scroll 0 0; color: #d05c34;}
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_div #habla_both_div { }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_div {  width: 155px !important;  }
+  	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_div #habla_panel_div { background-color: #efeff0 /*#f5f5f7*/ !important; }
+  	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_window_div #habla_panel_div #habla_expanded_div div { /*border-right: 1px solid #BDBDBD; border-left: 1px solid #BDBDBD;*/ }
+  	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_topbar_div { /*TOP BAR*/ background: url(/images/olark/header-icon3.png) 12px 8px no-repeat transparent; color: #8c8c8c;font-family: "ProximaNova", "Proxima Nova", "Helvetica Neue"; font-weight: normal; text-shadow: 0px 1px 0px #fff;padding: 12px 10px 16px 36px; /*border-top: 1px solid #bdbdbd; border-right: 1px solid #bdbdbd; border-left: 1px solid #bdbdbd;*/ height: 10px; } /*added*/
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_topbar_div a.habla_oplink_a_hover:hover { font-weight: normal; text-decoration: none; padding-left: 8px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_topbar_div a.habla_oplink_a_normal {color: #777474; font-weight: normal;text-decoration: none; padding-left: 8px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .habla_button { /*background-image: url(/themes/snow/buttons-dark.png); */}
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .hbl_txt_wrapper {border: 1px solid #b6b6b6;background: white; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .hbl_txt_wrapper textarea {background: white; color: black;margin-top: 5px; border: none; padding: 6px 5px 0px; margin: 0; width: 100%; height: 28px; line-height: 1.3; height: auto; box-sizing: border-box !important; resize: none; } 
+    #habla_beta_container_do_not_rely_on_div_classes_or_names .habla_button:hover { font-weight: normal; text-decoration: none; padding-left: 8px; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names input {background-color: #E9E9E9; color: #333 !important;background-repeat: repeat-x;background-position: 0 -36px, 0 0;font-size: 11px;padding: 9px 20px 9px;-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #CACACA; text-shadow: none !important; -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5);box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5);background: #E9E9E9 url(/images/meow/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255, 255, 255, .4) 0%,transparent 100%); background: #00A6FC url(/images/meow/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop (0%,rgba(255, 255, 255, .4)), color-stop(100%, transparent)); background: ##E9E9E9 url(/images/meow/button-gloss.png) repeat-x 0 -34px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out;-o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; text-decoration: none; font-weight: bold; line-height: 1; position: relative; cursor: pointer; text-align: center; display: inline-block; margin-top: 7px;}
+	#habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div {border-bottom: 1px dotted #ededed;/* HACK: .. the one hack in this file, make the size of the offline body relative to height */ /* rules for offline body, currently we do not honor height for offline messages */ /* make links blue */ /* avatar *//* conversation */ }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div #habla_offline_body_input {height: 100px; overflow-y: auto; }
+    #habla_offline_message_div {background: #f8f8f8 !important;} /*added*/
+    #habla_offline_message_div .hbl_txt_wrapper {-moz-box-shadow:    inset 0 0 1px #969292; /*inner shadow*/-webkit-box-shadow: inset 0 0 1px #969292; box-shadow: inset 0 0 1px #969292; margin: 0 10px;} /*added*/
+   	#habla_offline_message_div input#habla_offline_submit_input {margin-right: 10px;}
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div a,
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div a:visited,
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div a:hover,
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div a:active { color: #246092; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .olrk_avatar {border: 1px solid #ededed; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_person1 {color: #979797; }
+    #habla_beta_container_do_not_rely_on_div_classes_or_names #habla_middle_wrapper_div .habla_conversation_person2 {color: #5ba0d0; }
+    #habla_offline_message_sent_div {background: #f8f8f8; font-size: 13px; padding: 10px; line-height: 1.4; font-family: "ProximaNova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+
+
+	a.hbl_pal_title_fg {
+	    color:  !important;
+	}
+
+	.hbl_pal_header_font_size{ 
+	  font-size: 16px !important;
+	  }
+	  .hbl_pal_title_fg{ 
+	  color: !important;
+	  }
+	  .hbl_pal_main_bg{ 
+	  background-color:white !important;
+	  }
+	  .hbl_pal_main_font_size{ 
+	  font-size: 14px !important;
+	  }
+	  .hbl_pal_local_fg{ 
+	  color: !important;
+	  }
+	  .hbl_pal_main_font_family{ 
+	  font-family: verdana,arial,helvetica !important;
+	  }
+	  .hbl_pal_title_bg{ 
+	  background-color: !important;
+	  }
+	  .hbl_pal_offline_submit_fg{ 
+	  color: !important;
+	  }
+	  .hbl_pal_remote_fg{ 
+	  color: !important;
+	  }
+	  .hbl_pal_input_font_size{ 
+	  font-size: 12px !important;
+	  }
+	  .hbl_pal_offline_submit_bg{ 
+	  background-color: !important;
+	  }
+	  .hbl_pal_main_fg{ 
+	  color:black !important;
+	  }
+  
+
+
+	div.hbl_pal_main_width{ 
+	  width: 300px !important;
+	  }
+	  div.hbl_pal_main_height{ 
+	  height: 150px !important;
+	  }
+  
+
+
+	/*Make position:fixed work in IE6!*/
+	
+	.olrk-fixed-top    /* position fixed Top    */{position:fixed;bottom:auto;top:0px;}
+	.olrk-fixed-bottom /* position fixed Bottom */{position:fixed;bottom:0px;top:auto;}
+	.olrk-fixed-left   /* position fixed Left   */{position:fixed;right:auto;left:0px;}
+	.olrk-fixed-right  /* position fixed right  */{position:fixed;right:0px;left:auto;}
+	
+	
+	
+	/* backwards compat */
+	.habla_window_div_position {
+	bottom:0px;
+	position: fixed;
+	right:0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	}
+	.habla_window_div_position_inline {
+	}
+	.habla_window_div_position_floating {
+	bottom:0px;
+	position: fixed;
+	right:0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	}
+	.habla_window_div_position_floating_ie {
+	bottom:0px;
+	position: absolute;
+	right:0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	}
+
+	
+	
+	/* END OLARK */

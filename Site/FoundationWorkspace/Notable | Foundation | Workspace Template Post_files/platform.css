@@ -1,0 +1,46 @@
+/* Built for Foundation v2.1.5 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+
+.top-bar.platform { height: 48px; line-height: 48px; font-size: 14px; }
+.top-bar.platform .attached { background-color: rgba(43,43,43,0.95); font-family: "Proxima", "Helvetica", Arial, sans-serif; border-bottom: 3px solid #B8D30B; }
+.top-bar.platform .attached a {text-decoration:none;}
+.top-bar.platform .attached>.name { background: url(../../images/top-bar/platform-bar-logo.png) no-repeat 4px top transparent; height: 45px; border: none; line-height: 45px; width: 94px; }
+.top-bar.platform .attached>.name.marketing  { height: 45px; border: none; line-height: 45px; width: 215px; }
+.top-bar.platform .attached>.name small { color: #999; display: block; }
+.top-bar.platform .attached>.name:hover {background-position: 4px -45px;  }
+.top-bar.platform .attached>.name>a.home { display: block; text-indent: -9999px; font-size: 14px !important; color: #fff; }
+
+.top-bar.platform .attached>.name .dropdown { position: absolute; left: 15px; top: 45px; margin: 0; padding: 8px 0; z-index: 101; background: #333; width: auto; display: none; }
+.top-bar.platform.home .attached>.name .dropdown { left: 80px; }
+.top-bar.platform.home .attached>.name .dropdown { background: #222; }
+.top-bar.platform .attached>.name:hover .dropdown { display: block; }
+
+.top-bar.platform .attached>.name .dropdown>li { display: block; margin: 0; padding: 0 20px; white-space: nowrap; line-height: 1.4; position: relative; }
+.top-bar.platform .attached>.name .dropdown>li.divider { height: 0; padding: 0; border-top: 1px solid #111; border-bottom: 1px solid #333; margin: 6px 0; }
+.top-bar.platform .attached>.name .dropdown>li a { display: block; margin: 0 -20px; padding: 4px 20px; font-weight: normal; }
+.top-bar.platform .attached>.name .dropdown>li label { text-transform: uppercase; font-weight: bold; font-size: 10px; margin: 0 0 8px; color: #999; }
+.top-bar.platform .attached>.name .dropdown>li:hover>a { background: #393939; }
+
+.show-on-phones { display: none !important; }
+
+/* Display different logo on home pages */
+.top-bar.platform.home .attached>.name { background-image: url(../../images/top-bar/platform-bar-home-page-logo.png); height: 45px; border: none; line-height: 48px; width: 214px; }
+.top-bar.platform.home .attached>.name:hover { background-color: #222; }
+
+@media only screen and (max-width: 767px) {
+  .top-bar.platform.expanded { border-bottom: 3px solid #FB0953; }
+  .top-bar.platform .attached { border-bottom: none; }
+  .top-bar.platform .attached>.name,
+  .top-bar.platform .attached>.name:hover { background-color: #222; width: auto; height: 45px; border-bottom: 3px solid #FB0953; background-position: 0 -90px; }
+  .top-bar.platform.expanded .attached>.name { border-bottom: 1px solid #444; }
+  .top-bar.platform .attached>ul>li.has-dropdown>a, .top-bar .attached>ul>li.has-dropdown>span { background-position: right 10px; }
+  .top-bar .attached > ul > li.active > a + .dropdown { top: 48px; }  
+
+  .top-bar.platform .attached>.name:hover .dropdown { display: none; }
+
+  .top-bar .attached > ul.right > li > a { color: #999; height: 34px; line-height: 34px; }
+  .top-bar.platform .attached>ul.right>li.has-dropdown>a, .top-bar .attached>ul.right>li.has-dropdown>span { background-position: right 4px; }
+  .show-on-phones { display: block !important; }
+  .top-bar.platform.home .attached > .name { width: 100%; background-image: url(../../images/top-bar/platform-bar-logo.png); }
+}
