@@ -1,0 +1,238 @@
+
+/** normalize **/
+#global-header #headerLogin,
+#global-header #headerLogin div {
+    float: none;
+    height: auto;
+    overflow: visible;
+}
+
+.gigya-screen h1,
+.gigya-screen h2,
+.gigya-screen h3 {
+    float: none;
+    width: auto;
+}
+
+/** copied from fox.com **/
+
+#headerLogin li {
+	display:none;
+	float:left;
+}
+#headerLogin li a {
+	font-size:12px;
+	color:#444444;
+}
+#headerLogin li a:hover {
+	color:#009aec;
+}
+#headerLogin li span {
+	display: inline-block;
+	margin: 0 8px;
+	color: #c3c4c5;
+}
+#headerLogin li.logIn span {
+	display:none;
+}
+#headerLogin li.signUp,
+#headerLogin li.logIn {
+	display:block;
+}
+#headerLogin .editProfile {
+	position: relative;
+	padding-left: 32px;
+}
+#headerLogin .editProfile a img {
+	vertical-align: middle;
+	margin-right: 5px;
+	border: solid 1px #A0A0A0;
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	top: -6px;
+}
+#headerLogin li a:hover {
+	color:#009aec;
+}
+#headerLogin li a:hover img {
+	border-color:#009aec;
+}
+
+#headerLogin {
+	position: absolute;
+	top: 13px;
+	right: 154px;
+}
+#headerLogin li {
+	display:none;
+	float:left;
+}
+#headerLogin li a {
+	font-size:12px;
+	color:white;
+}
+#headerLogin li a:hover {
+	color:#009aec;
+}
+#headerLogin li span {
+	display: inline-block;
+	margin: 0 8px;
+	color: #484848;
+}
+#headerLogin li.logIn span {
+	display:none;
+}
+#headerLogin li.signUp,
+#headerLogin li.logIn {
+	display:block;
+}
+body.authenticated #headerLogin li {
+	display:block;
+}
+body.authenticated #headerLogin li.signUp,
+body.authenticated #headerLogin li.logIn {
+	display:none;
+}
+
+.fox-nav #headerLogin {
+    margin-top: 0;
+}
+
+@media screen {
+body
+#oo_tab{background-color:transparent;border:none;display:block;position:fixed;top:45%;height:127px;width:38px;z-index:999995;cursor:pointer}body #oo_tab
+span{bottom:15px;_bottom:5px;display:block;background:url(/_app/components/opinion_lab-1.0/onlineopinionV5/oo_tab_icon.gif) no-repeat;height:9px;position:absolute;width:9px}body #oo_tab
+div{background:none;position:absolute;display:block;height:100%;left:0;top:0;width:100%}body #oo_tab div:hover{background-position:0 0}body
+#oo_tab.oo_tab_right{border-radius:0;right:0;transition:right 0.5s;-moz-transition:right 0.5s;-webkit-transition:right 0.5s;-o-transition:right 0.5s;background:url('/_app/components/opinion_lab-1.0/images/button-tab.png') top right}body #oo_tab.oo_tab_right
+span{left:22px;bottom:30px}body #oo_tab.oo_tab_right:hover{right:0;background-position:0 -150px}body #oo_tab.oo_tab_right:hover
+span{left:17px;background:url(/_app/components/opinion_lab-1.0/onlineopinionV5/oo_tab_icon_00a5ee.gif) no-repeat}body
+.oo_tab_ie_right{border-right:none !important;right:0;width:38px !important}body .oo_tab_ie_right:hover{right:9px;width:38px !important}.ol_video,.ol_inline{display:block;text-align:center}.ol_inline{width:88px;height:27px;line-height:27px;margin:0
+auto;position:relative;background:url('/_app/components/opinion_lab-1.0/images/button-footer.png')}#select-provider .ol_inline,
+#please-sign-in-again
+.ol_inline{margin-top:10px}a.ol_feedback,a.ol_authentication,a.ol_login{display:inline-block;background:transparent url('/_app/components/opinion_lab-1.0/onlineopinionV5/oo_icon.gif') no-repeat 1px 9px;padding-left:15px;outline:none}a.ol_feedback:hover,a.ol_authentication:hover,a.ol_login:hover{color:#00a5ee !important;text-decoration:none;background:transparent url('/_app/components/opinion_lab-1.0/onlineopinionV5/oo_icon_00a5ee.gif') no-repeat 1px 9px}a.ol_login,a.ol_login:hover,a.ol_authentication,a.ol_authentication:hover{background-position:1px 9px}.ol_video{width:225px !important;height:24px;line-height:24px;margin:3px
+0 0 0;border-right:1px solid #BBB;float:left}.ol_video
+a{background:transparent url('/_app/components/opinion_lab-1.0/onlineopinionV5/oo_icon.gif') no-repeat 0 7px;display:inline-block;padding-left:18px}.ol_video a.b-button{background:none;padding-left:0}.ol_button{height:40px;margin:15px
+0 20px 0;text-align:center;clear:both;position:relative;padding:0;background:none}.ol_button
+a{display:inline-block;font-weight:bold;width:300px;height:44px;line-height:44px;overflow:hidden;cursor:pointer}.mboxDefault{background:none !important;border:none !important;padding:0
+!important;margin:0
+!important}#gigyaMask{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background:#000;opacity:0.75;filter:alpha(opacity=75);z-index:9999}#gigyaPopup{position:relative;position:fixed;top:50%;left:50%;z-index:10000;min-height:420px}#gigyaPopup .gigya-close-popup{cursor:pointer;display:block;position:absolute;top: -10px;right: -10px;width:24px;height:24px;text-indent: -9999px;overflow:hidden;z-index:10000;background:url(/_ui/images/css_sprites/gui.png) no-repeat scroll -220px top transparent}#gigyaPopup .gigya-close-popup:hover{background-position: -220px -30px}.gigya-screen{width:645px;border:solid 10px #181818;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background:#fff;padding:10px;color:#333}h1.gigya-header{margin: -10px -10px 10px;width:665px;height:45px;line-height:45px;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#fff;background:url(/_ui/images/_components/auth/auth_sprite.png?v=3) no-repeat scroll 21px -389px black;text-align:center}.gigya-error-display{padding:5px
+0}.gigya-error-msg{display:block}.gigya-error-display .gigya-error-msg{text-align:center}.gigya-layout-row{overflow:hidden}#gigya-login-screen .gigya-layout-login-panes{background:url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll -1061px -268px transparent}.gigya-layout-cell{display:block;float:left;padding-top:3px;position:relative;width:50%}#gigya-login-screen .gigya-layout-cell{min-height:245px}#gigya-login-screen .gigya-layout-login .gigya-layout-cell-content{margin-left:29px}#gigya-login-screen .gigya-layout-social .gigya-layout-cell-content{margin-left:39px}#gigya-login-screen .gigya-composite-control-header{height:21px;line-height:21px;font-size:100%;font-weight:normal;margin:0
+0 22px;color:#333}#gigya-login-screen .gigya-layout-login .gigya-composite-control-header{background:url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll 0 -445px transparent;padding:0
+0 0 55px}.gigya-composite-control-dropdown select,.gigya-input-text,.gigya-input-password{border:1px
+solid #B9BCBE;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height:21px;padding:3px;width:244px}.gigya-input-text.placeholder,.gigya-input-password.placeholder{color:#bbb}.gigya-composite-control-dropdown
+select{width:252px;height:29px}.gigya-composite-control-dropdown,.gigya-composite-control-textbox,.gigya-composite-control-password{margin:0
+0 16px}gigya-composite-control-dropdown select:focus,
+gigya-composite-control-dropdown select:hover,.gigya-input-text:focus,.gigya-input-password:focus,.gigya-input-text:hover,.gigya-input-password:hover{border:1px
+solid #75D1F4}#gigya-login-screen .gigya-composite-control-submit{height:29px;line-height:29px;overflow:hidden;margin:0
+0 15px}#gigya-login-screen .gigya-composite-control-submit .gigya-input-checkbox{float:left;font-weight:normal;margin-right:10px;margin-top:7px;width:auto}#gigya-login-screen .gigya-input-submit,
+#gigya-forgot-password-screen .gigya-input-submit,
+#gigya-email-verification-screen .gigya-input-submit,
+#gigya-link-account-screen .gigya-input-submit,
+#gigya-reset-password-screen .gigya-input-submit{background:url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll -641px top transparent;border:0
+none;cursor:pointer;display:block;float:right;height:29px;margin-right:43px;text-indent: -9999px;width:97px}#gigya-forgot-password-screen .gigya-input-submit,
+#gigya-email-verification-screen .gigya-input-submit,
+#gigya-link-account-screen .gigya-input-submit,
+#gigya-reset-password-screen .gigya-input-submit{margin-right:0;background-position: -975px -78px}#gigya-login-screen .gigya-input-submit:hover{background-position: -749px top}#gigya-forgot-password-screen .gigya-input-submit:hover,
+#gigya-email-verification-screen .gigya-input-submit:hover,
+#gigya-link-account-screen .gigya-input-submit:hover,
+#gigya-reset-password-screen .gigya-input-submit:hover{background-position: -1082px -78px}#gigya-login-screen .gigya-composite-control-label-link,
+#gigya-link-account-screen .gigya-composite-control-label-link{display:block;margin-bottom:4px}.gigya-composite-control-label-link a,
+#gigyaContainer .gigya-composite-control a,
+.gigya-composite-control a,
+#gigya-tos
+.privacy{color:#009aec;text-decoration:none;cursor:pointer}#gigya-login-screen .gigya-composite-control-label-link a:hover,
+#gigya-tos .privacy:hover{text-decoration:underline}#gigya-login-screen .gigya-social-providers .gigya-social-provider{background:#e3e3e3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAAAAADI/isbAAAAH0lEQVQIW2P4zvSfiQGOGZj+MTECWahiIBoEYTJQCADjbA4mJpx1sQAAAABJRU5ErkJggg==) repeat-x;border:1px
+solid #CCC;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;cursor:pointer;height:30px;list-style:none outside none;margin-bottom:5px;margin-left:0;margin-top:0;position:relative;width:218px;-moz-box-shadow:0 1px 3px #EEE;-webkit-box-shadow:0 1px 3px #EEE;box-shadow:0 1px 3px #EEE}#gigya-login-screen .gigya-social-providers .gigya-social-provider:hover{background:#e3e3e3}#gigya-login-screen .gigya-social-providers .gigya-social-provider
+a{display:block;font-family:Helvetica,lucidagrande,Verdana,sans-serif;font-size:12px;line-height:14px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;text-align:center;text-decoration:none}#gigya-login-screen .gigya-social-providers .gigya-social-provider a
+.icon{display:inline-block;vertical-align:middle;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;height:24px;width:24px;margin:3px
+0 0 0;background:url(/_app/components/auth-3.0/images/socials.png) no-repeat}#gigya-login-screen .gigya-social-providers .gigya-social-provider a
+.color{cursor:pointer;display:inline-block;font-family:lucidagrande,Helvetica,Verdana,sans-serif;margin-left:7px;margin-top:9px;text-align:left;vertical-align:top}#gigya-login-screen .gigya-social-providers .gigya-social-provider.facebook a
+.icon{background-position:0 0}#gigya-login-screen .gigya-social-providers .gigya-social-provider.twitter a
+.icon{background-position:0 -24px}#gigya-login-screen .gigya-social-providers .gigya-social-provider.google a
+.icon{background-position:0 -48px}#gigya-login-screen .gigya-social-providers .gigya-social-provider.facebook a
+.color{color:#3b5998}#gigya-login-screen .gigya-social-providers .gigya-social-provider.twitter a
+.color{color:#27c9ff}#gigya-login-screen .gigya-social-providers .gigya-social-provider.google a
+.color{color:#61a6fb}#gigya-tos{border-top:1px solid #E5E5E5;clear:both;overflow:hidden;padding:14px
+0 10px;width:100%}#gigya-tos
+p{font-size:12px;text-align:center}.gigya-layout-header{font-size:11px;line-height:18px;padding:14px
+60px 12px 20px;height:36px;background:#d2f1fc url(data:image/gif;base64,R0lGODdhAQACAIACAOLi4vX19SwAAAAAAQACAAACAkQKADs=) center bottom repeat-x;margin: -10px -10px 10px}.gigya-layout-header
+h2{display:block;font-size:16px;font-weight:bold;line-height:18px;color:#333}.gigya-layout-header .gigya-composite-control-label{font-size:11px}#gigya-register-screen .gigya-composite-control .gigya-label,
+#gigya-complete-registiration-screen .gigya-composite-control .gigya-label,
+#gigya-forgot-password-screen .gigya-composite-control .gigya-label,
+#gigya-forgot-password-success-screen .gigya-composite-control-label,
+#gigya-link-account-screen .gigya-composite-control .gigya-label,
+#gigya-reset-password-screen .gigya-composite-control .gigya-label{font-weight:bold;display:block;font-size:12px;margin-bottom:7px}#gigya-forgot-password-success-screen .gigya-composite-control-label{font-weight:normal}#gigya-register-screen .gigya-composite-control .gigya-label
+cite{font-size:11px;font-weight:normal}#gigya-complete-registiration-screen  .gigya-composite-control-checkbox .gigya-label,
+#gigya-register-screen .gigya-composite-control-checkbox .gigya-label{font-weight:normal;display:inline}#gigya-register-screen .gigya-required-display{color:#c00}#gigya-register-screen .gigya-composite-control-captcha-widget .gigya-captcha{margin-left: -3px}#gigya-register-screen .gigya-composite-control-captcha-widget .gigya-captcha .recaptcha_image_cell
+span{display:block;line-height:1em;font-size:11px;margin:0
+0 3px 0}#gigya-register-screen .gigya-composite-control-captcha-widget .gigya-captcha
+.recaptcha_audio_cant_hear_link{font-size:11px}#gigya-complete-registiration-screen .gigya-input-submit,
+#gigya-register-screen .gigya-input-submit,
+#gigya-forgot-password-success-screen .gigya-input-submit,
+#gigya-thank-you-screen .gigya-input-submit,
+#gigya-email-verified-screen .gigya-input-submit,
+#gigya-reset-password-confirmation-screen .gigya-input-submit{background:url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll -641px -78px transparent;border:0
+none;float:right;height:30px;margin-top:10px;text-indent: -9999px;width:157px}#gigya-thank-you-screen .gigya-input-submit,
+#gigya-forgot-password-success-screen .gigya-input-submit,
+#gigya-email-verified-screen .gigya-input-submit,
+#gigya-reset-password-confirmation-screen .gigya-input-submit{background-position:0 -654px;width:100px;cursor:pointer}#gigya-complete-registiration-screen .gigya-input-submit:hover,
+#gigya-register-screen .gigya-input-submit:hover{background-position: -808px -78px}#gigya-forgot-password-success-screen .gigya-input-submit:hover,
+#gigya-thank-you-screen .gigya-input-submit:hover,
+#gigya-email-verified-screen .gigya-input-subit:hover,
+#gigya-reset-password-confirmation-screen .gigya-input-submit:hover{background-position:0 -692px}#gigya-register-screen .gigya-composite-control-checkbox{margin-bottom:7px}#gigya-complete-registiration-screen .gigya-composite-control-checkbox,
+#gigya-forgot-password-screen .gigya-composite-control-label-top{padding-top:21px}#gigya-email-verification-screen .gigya-composite-control-label-top{padding-top:7px}#gigya-register-screen .gigya-composite-control-submit{margin-top:53px}#gigya-email-verification-screen .ol_inline,
+#gigya-complete-registiration-screen .ol_inline,
+#gigya-register-screen .ol_inline,
+#gigya-thank-you-screen .ol_inline,
+#gigya-link-account-screen
+.ol_inline{margin-top:20px}#gigyaContainer .ol_inline
+a{color:#333}.gigya-screen-dialog{display:none !important}#gigya-change-password-screen,#gigya-update-profile-screen{padding:0
+0 20px;margin:0;border:none;background:none}#gigya-update-profile-screen div.gigya-photo-upload{height:63px;width:300px}#gigya-update-profile-screen div.gigya-photo-upload-image{background-color:#fff;background-position:center;background-repeat:no-repeat;padding:5px;border:solid 1px #eee;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;float:left;height:64px;margin-right:8px;width:64px}#gigya-update-profile-screen div.gigya-photo-upload-button{-webkit-background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;-moz-background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;border:1px
+solid #CECECE;border-radius:4px 4px 4px 4px;color:#333;cursor:pointer;display:inline-block;font-weight:bold;line-height:28px;margin:0
+8px 8px 0;padding:0
+12px}#gigya-update-profile-screen div.gigya-photo-upload-path{background-position:right center;background-repeat:no-repeat;display:inline-block;padding-right:20px}#gigya-change-password-screen .gigya-input-submit,
+#gigya-update-profile-screen .gigya-input-submit,
+#gigya-update-profile-screen .gigya-input-delete-account{background:url(/_ui/images/profile/sprite_profile.png) no-repeat;background-position:0 -163px;border:0
+none;cursor:pointer;float:left;height:30px;margin:0
+10px 0 0;overflow:hidden;padding:0;text-indent:100%;white-space:nowrap;width:137px}#gigya-change-password-screen .gigya-input-submit:hover,
+#gigya-update-profile-screen .gigya-input-submit:hover{background-position:0 -195px}#gigya-update-profile-screen .gigya-composite-control .gigya-label,
+#gigya-change-password-screen .gigya-composite-control .gigya-label{font-weight:bold;display:block;font-size:12px;margin-bottom:7px}#gigya-update-profile-screen .gigya-input-delete-account{background-position: -150px -163px;margin-top:20px}#gigya-update-profile-screen .gigya-input-delete-account.inline{margin-top:0}#gigya-update-profile-screen .gigya-input-delete-account:hover{background-position: -150px -195px}.change-password{display:none !important}.can-change-password .change-password{display:block !important}body.ie8
+#gigyaMask{background:#444}.ie8 .gigya-layout-header{background:#D2F1FC;height:auto;margin: -35px 0 15px!important}body.ie .gigya-screen{width:645px;border:solid 10px #181818;background:#fff;padding:10px}body.ie .gigya-layout-row .gigya-error-display{display:none}.ie .gigya-input-submit,
+.ie .gigya-input-submit:hover{filter:none;border-bottom:0}.ie h1.gigya-header{color:#fff}
+/*0.084 s*/
+}
+
+/** tweaks for new layout **/
+@media screen {
+    #headerLogin {
+        right: 296px;
+    }
+
+    .gigya-screen,
+    .gigya-screen * {
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+    .gigya-screen h1.gigya-header {
+        box-sizing: border-box;
+    }
+
+    .gigya-screen {
+        font: 12px/1.231 arial,helvetica,clean,sans-serif;
+        text-align: left;
+    }
+
+    .gigya-screen ul,
+    .gigya-input-submit {
+        padding: 0;
+    }
+}
+
+/** hide the login stuff along with search **/
+@media (max-width: 35.5em) {
+  .responsive #global-header #headerLogin {
+      display: none;
+  }
+}

@@ -6,7 +6,7 @@
 .top-bar.platform .attached { background-color: rgba(43,43,43,0.95); font-family: "Proxima", "Helvetica", Arial, sans-serif; border-bottom: 3px solid #B8D30B; }
 .top-bar.platform .attached a {text-decoration:none;}
 .top-bar.platform .attached>.name { background: url(../../images/top-bar/platform-bar-logo.png) no-repeat 4px top transparent; height: 45px; border: none; line-height: 45px; width: 94px; }
-.top-bar.platform .attached>.name.marketing  { height: 45px; border: none; line-height: 45px; width: 215px; }
+.top-bar.platform .attached>.name.marketing  { height: 45px; border: none; line-height: 45px; width: 215px; padding-top: 8px;}
 .top-bar.platform .attached>.name small { color: #999; display: block; }
 .top-bar.platform .attached>.name:hover {background-position: 4px -45px;  }
 .top-bar.platform .attached>.name>a.home { display: block; text-indent: -9999px; font-size: 14px !important; color: #fff; }

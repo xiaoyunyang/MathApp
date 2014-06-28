@@ -1,0 +1,2417 @@
+@media screen {
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+#cboxOverlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft {
+	clear: left;
+}
+
+#cboxContent {
+	position: relative;
+}
+
+#cboxLoadedContent {
+	overflow: auto;
+}
+
+#cboxLoadedContent iframe {
+	display: block;
+	/*width: 100%;
+	height: 100%;*/
+	border: 0;
+}
+
+#cboxTitle{
+	margin: 0;
+}
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+	cursor: pointer;
+}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+
+#cboxWrapper {
+	overflow: visible;
+	border: 1px solid #fff;
+	padding: 5px;
+}
+
+#cboxOverlay {
+	background: #000;
+}
+
+#cboxContent {
+	margin-top: 0px;
+}
+
+#cboxLoadedContent {
+	background: #000;
+}
+
+#cboxTitle {
+	display: none;
+}
+
+#cboxCurrent {
+	position: absolute;
+	color: #ccc;
+	display: none;
+}
+
+#cboxSlideshow {
+	position: absolute;
+	color: #fff;
+}
+
+#cboxPrevious {
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#cboxPrevious.hover {
+	background-position: 0 -100px;
+}
+
+#cboxNext {
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#cboxNext.hover {
+	background-position: 100% -100px;
+}
+
+#cboxLoadingOverlay {
+	background: #000;
+}
+
+#cboxLoadingGraphic {
+	background: url(../images/colorbox/loading.gif) center center no-repeat;
+}
+
+#cboxClose {
+	position: absolute;
+	top: -11px;
+	right: -13px;
+	display: block;
+	background: url(../images/colorbox/controls.png) -62px 0  no-repeat;
+	width: 24px;
+	height: 24px;
+	text-indent: -9999px;
+}
+
+#cboxClose.hover {
+	background-position: -62px -30px;
+}
+
+        
+        #cboxWrapper {
+	padding:10px;
+	background:url(/_ui/images/_components/photo_player_small/bg_black_50p.png) top left transparent;
+	border:0px;
+	border-radius:5px;
+}
+#cboxContent {
+	background:none white;
+	padding:10px;
+}
+#cboxLoadedContent {
+	background: #000;
+	/*margin-bottom:35px;*/
+}
+#cboxLoadingGraphic {
+	background:url(/_ui/images/_components/photo_player_small/loading.gif) no-repeat scroll center center transparent;
+	border-radius:5px;
+}
+
+#cboxTitle {
+	position:absolute;
+	display:block;
+	bottom:0px;
+	left:150px;
+	height:35px;
+	color:#535353;
+	margin-right:10px;
+}
+#cboxCurrent {
+	position:absolute;
+	display:block;
+	bottom:22px;
+	left:75px;
+	color:black;
+	font-weight:bold;
+	font-size:10px;
+}	
+#cboxPrevious {
+	background:url("/_ui/images/css_sprites/gui.png") no-repeat scroll -151px 0 transparent;
+	height:25px;
+	width:25px;
+	bottom:15px;
+}
+#cboxPrevious:hover {
+	background:url(/_ui/images/css_sprites/gui.png) no-repeat scroll -151px -30px transparent;
+}
+#cboxNext {
+	background:url("/_ui/images/css_sprites/gui.png") no-repeat scroll -180px 0 transparent;
+	height:25px;
+	width:25px;
+	bottom:15px;
+	left:40px;
+}
+#cboxNext:hover {
+	background:url(/_ui/images/css_sprites/gui.png) no-repeat scroll -180px -30px transparent;
+}
+#cboxClose {
+	background:url(/_ui/images/css_sprites/gui.png) no-repeat scroll -220px top transparent;
+	top:-10px;
+	right:-10px;
+	z-index:1000;
+}
+#cboxClose:hover {
+	background:url(/_ui/images/css_sprites/gui.png) no-repeat scroll -220px -30px transparent;
+}body #oo_tab { background-color: transparent; border: none; display: block; position: fixed; top: 45%; height: 127px; width: 38px; z-index: 999995; cursor: pointer; }
+body #oo_tab span { bottom: 15px; _bottom: 5px; display: block; background: url(/_app/components/opinion_lab-1.0/onlineopinionV5/oo_tab_icon.gif) no-repeat; height: 9px; position: absolute; width: 9px; }
+body #oo_tab div { background: none; position: absolute; display: block; height: 100%; left: 0; top: 0; width: 100%; }
+body #oo_tab div:hover {background-position: 0 0;}
+
+
+body #oo_tab.oo_tab_right { border-radius: 0; right: 0; transition: right 0.5s; -moz-transition: right 0.5s; -webkit-transition: right 0.5s; -o-transition: right 0.5s; background: url('/_app/components/opinion_lab-1.0/images/button-tab.png') top right; }
+body #oo_tab.oo_tab_right span { left: 22px; bottom: 30px; }
+body #oo_tab.oo_tab_right:hover { right: 0; background-position: 0 -150px; }
+body #oo_tab.oo_tab_right:hover span { left: 17px; background: url(/_app/components/opinion_lab-1.0/onlineopinionV5/oo_tab_icon_00a5ee.gif) no-repeat; }
+
+body .oo_tab_ie_right { border-right: none !important; right: 0; width: 38px !important; }
+body .oo_tab_ie_right:hover { right: 9px; width: 38px !important; }
+
+.ol_video,
+.ol_inline {
+    display: block;
+    text-align: center;
+}
+
+.ol_inline {
+    width: 88px;
+    height: 27px;
+    line-height: 27px;
+    margin: 0 auto;
+    position: relative;
+    background: url('/_app/components/opinion_lab-1.0/images/button-footer.png');
+}
+
+#select-provider .ol_inline,
+#please-sign-in-again .ol_inline {
+    margin-top: 10px;
+}
+
+a.ol_feedback,
+a.ol_authentication,
+a.ol_login {
+    display: inline-block;
+    background: transparent url('/_app/components/opinion_lab-1.0/onlineopinionV5/oo_icon.gif') no-repeat 1px 9px;
+    padding-left: 15px;
+    outline: none;
+}
+
+a.ol_feedback:hover,
+a.ol_authentication:hover,
+a.ol_login:hover {
+    color: #00a5ee !important;
+    text-decoration: none;
+    background: transparent url('/_app/components/opinion_lab-1.0/onlineopinionV5/oo_icon_00a5ee.gif') no-repeat 1px 9px;
+}
+
+a.ol_login,
+a.ol_login:hover,
+a.ol_authentication,
+a.ol_authentication:hover {
+    background-position: 1px 9px;
+}
+
+.ol_video {
+    width: 225px !important;
+    height: 24px;
+    line-height: 24px;
+    margin: 3px 0 0 0;
+    border-right: 1px solid #BBB;
+    float: left;
+}
+
+.ol_video a {
+    background: transparent url('/_app/components/opinion_lab-1.0/onlineopinionV5/oo_icon.gif') no-repeat 0 7px;
+    display: inline-block;
+    padding-left: 18px;
+}
+
+.ol_video a.b-button {
+    background: none;
+    padding-left: 0;
+}
+
+.ol_button {
+    height: 40px;
+    margin: 15px 0 20px 0;
+    text-align: center;
+    clear: both;
+    position: relative;
+    padding: 0;
+    background: none;
+}
+
+.ol_button a {
+    display: inline-block;
+    font-weight: bold;
+    width: 300px;
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mboxDefault {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}#gigyaMask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    z-index: 9999;
+}
+
+#gigyaPopup {
+    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    min-height: 420px;
+}
+
+#gigyaPopup .gigya-close-popup {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 10000;
+    background: url(/_ui/images/css_sprites/gui.png) no-repeat scroll -220px top transparent
+}
+
+#gigyaPopup .gigya-close-popup:hover {
+    background-position: -220px -30px;
+}
+
+.gigya-screen {
+    width: 645px;
+    border: solid 10px #181818;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px;
+    color: #333;
+}
+
+h1.gigya-header {
+    margin: -10px -10px 10px;
+    width: 665px;
+    height: 45px;
+    line-height: 45px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: url(/_ui/images/_components/auth/auth_sprite.png?v=3) no-repeat scroll 21px -389px black;
+    text-align: center;
+}
+
+.gigya-error-display {
+    padding: 5px 0;
+}
+
+.gigya-error-msg {
+    display: block;
+}
+
+.gigya-error-display .gigya-error-msg {
+    text-align: center;
+}
+
+.gigya-layout-row {
+    overflow: hidden;
+}
+
+#gigya-login-screen .gigya-layout-login-panes {
+    background: url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll -1061px -268px transparent
+}
+
+.gigya-layout-cell {
+    display: block;
+    float: left;
+    padding-top: 3px;
+    position: relative;
+    width: 50%;
+}
+
+#gigya-login-screen .gigya-layout-cell {
+    min-height: 245px;
+}
+
+#gigya-login-screen .gigya-layout-login .gigya-layout-cell-content {
+    margin-left: 29px;
+}
+
+#gigya-login-screen .gigya-layout-social .gigya-layout-cell-content {
+    margin-left: 39px;
+}
+
+#gigya-login-screen .gigya-composite-control-header {
+    height: 21px;
+    line-height: 21px;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0 0 22px;
+    color: #333;
+}
+
+#gigya-login-screen .gigya-layout-login .gigya-composite-control-header {
+    background: url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll 0 -445px transparent;
+    padding: 0 0 0 55px;
+}
+
+.gigya-composite-control-dropdown select,
+.gigya-input-text,
+.gigya-input-password {
+    border: 1px solid #B9BCBE;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 21px;
+    padding: 3px;
+    width: 244px;
+}
+
+.gigya-input-text.placeholder,
+.gigya-input-password.placeholder {
+    color: #bbb;
+}
+
+.gigya-composite-control-dropdown select {
+    width: 252px;
+    height: 29px;
+}
+
+.gigya-composite-control-dropdown,
+.gigya-composite-control-textbox,
+.gigya-composite-control-password {
+    margin: 0 0 16px;
+}
+
+gigya-composite-control-dropdown select:focus,
+gigya-composite-control-dropdown select:hover,
+.gigya-input-text:focus,
+.gigya-input-password:focus,
+.gigya-input-text:hover,
+.gigya-input-password:hover {
+    border: 1px solid #75D1F4;
+}
+
+#gigya-login-screen .gigya-composite-control-submit {
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+    margin: 0 0 15px;
+}
+
+#gigya-login-screen .gigya-composite-control-submit .gigya-input-checkbox {
+    float: left;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 7px;
+    width: auto;
+}
+
+#gigya-login-screen .gigya-input-submit,
+#gigya-forgot-password-screen .gigya-input-submit,
+#gigya-email-verification-screen .gigya-input-submit,
+#gigya-link-account-screen .gigya-input-submit,
+#gigya-reset-password-screen .gigya-input-submit {
+    background: url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll -641px top transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 29px;
+    margin-right: 43px;
+    text-indent: -9999px;
+    width: 97px;
+}
+
+#gigya-forgot-password-screen .gigya-input-submit,
+#gigya-email-verification-screen .gigya-input-submit,
+#gigya-link-account-screen .gigya-input-submit,
+#gigya-reset-password-screen .gigya-input-submit {
+    margin-right: 0;
+    background-position: -975px -78px;
+}
+
+#gigya-login-screen .gigya-input-submit:hover {
+    background-position: -749px top;
+}
+
+#gigya-forgot-password-screen .gigya-input-submit:hover,
+#gigya-email-verification-screen .gigya-input-submit:hover,
+#gigya-link-account-screen .gigya-input-submit:hover,
+#gigya-reset-password-screen .gigya-input-submit:hover {
+    background-position: -1082px -78px;
+}
+
+
+#gigya-login-screen .gigya-composite-control-label-link,
+#gigya-link-account-screen .gigya-composite-control-label-link {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.gigya-composite-control-label-link a,
+#gigyaContainer .gigya-composite-control a,
+.gigya-composite-control a,
+#gigya-tos .privacy {
+    color: #009aec;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#gigya-login-screen .gigya-composite-control-label-link a:hover,
+#gigya-tos .privacy:hover {
+    text-decoration: underline;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider {
+    background: #e3e3e3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAAAAADI/isbAAAAH0lEQVQIW2P4zvSfiQGOGZj+MTECWahiIBoEYTJQCADjbA4mJpx1sQAAAABJRU5ErkJggg==) repeat-x;
+    border: 1px solid #CCCCCC;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    cursor: pointer;
+    height: 30px;
+    list-style: none outside none;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    width: 218px;
+    -moz-box-shadow: 0 1px 3px #EEEEEE;
+    -webkit-box-shadow: 0 1px 3px #EEEEEE;
+    box-shadow: 0 1px 3px #EEEEEE;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider:hover {
+    background: #e3e3e3;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider a {
+    display: block;
+    font-family: Helvetica,lucida grande,Verdana,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider a .icon {
+    display: inline-block;
+    vertical-align: middle;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    height: 24px;
+    width: 24px;
+    margin: 3px 0 0 0;
+    background: url(/_app/components/auth-3.0/images/socials.png) no-repeat;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider a .color {
+    cursor: pointer;
+    display: inline-block;
+    font-family: lucida grande,Helvetica,Verdana,sans-serif;
+    margin-left: 7px;
+    margin-top: 9px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider.facebook a .icon {
+    background-position: 0 0;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider.twitter a .icon {
+    background-position: 0 -24px;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider.google a .icon {
+    background-position: 0 -48px;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider.facebook a .color {
+    color: #3b5998;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider.twitter a .color {
+    color: #27c9ff;
+}
+
+#gigya-login-screen .gigya-social-providers .gigya-social-provider.google a .color {
+    color: #61a6fb;
+}
+
+#gigya-tos {
+    border-top: 1px solid #E5E5E5;
+    clear: both;
+    overflow: hidden;
+    padding: 14px 0 10px;
+    width: 100%;
+}
+
+#gigya-tos p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.gigya-layout-header {
+    font-size: 11px;
+    line-height: 18px;
+    padding: 14px 60px 12px 20px;
+    height: 36px;
+    background: #d2f1fc url(data:image/gif;base64,R0lGODdhAQACAIACAOLi4vX19SwAAAAAAQACAAACAkQKADs=) center bottom repeat-x;
+    margin: -10px -10px 10px;
+}
+
+.gigya-layout-header h2 {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #333;
+}
+
+.gigya-layout-header .gigya-composite-control-label {
+    font-size: 11px;
+}
+
+#gigya-register-screen .gigya-composite-control .gigya-label,
+#gigya-complete-registiration-screen .gigya-composite-control .gigya-label,
+#gigya-forgot-password-screen .gigya-composite-control .gigya-label,
+#gigya-forgot-password-success-screen .gigya-composite-control-label,
+#gigya-link-account-screen .gigya-composite-control .gigya-label,
+#gigya-reset-password-screen .gigya-composite-control .gigya-label {
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+
+#gigya-forgot-password-success-screen .gigya-composite-control-label {
+    font-weight: normal;
+}
+
+#gigya-register-screen .gigya-composite-control .gigya-label cite {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+#gigya-complete-registiration-screen  .gigya-composite-control-checkbox .gigya-label,
+#gigya-register-screen .gigya-composite-control-checkbox .gigya-label {
+    font-weight: normal;
+    display: inline;
+}
+
+#gigya-register-screen .gigya-required-display {
+    color: #c00;
+}
+
+#gigya-register-screen .gigya-composite-control-captcha-widget .gigya-captcha {
+    margin-left: -3px;
+}
+
+#gigya-register-screen .gigya-composite-control-captcha-widget .gigya-captcha .recaptcha_image_cell span {
+    display: block;
+    line-height: 1em;
+    font-size: 11px;
+    margin: 0 0 3px 0;
+}
+
+#gigya-register-screen .gigya-composite-control-captcha-widget .gigya-captcha .recaptcha_audio_cant_hear_link {
+    font-size: 11px;
+}
+
+#gigya-complete-registiration-screen .gigya-input-submit,
+#gigya-register-screen .gigya-input-submit,
+#gigya-forgot-password-success-screen .gigya-input-submit,
+#gigya-thank-you-screen .gigya-input-submit,
+#gigya-email-verified-screen .gigya-input-submit,
+#gigya-reset-password-confirmation-screen .gigya-input-submit {
+    background: url(/_app/components/auth-3.0/images/foxIDSprite.png) no-repeat scroll -641px -78px transparent;
+    border: 0 none;
+    float: right;
+    height: 30px;
+    margin-top: 10px;
+    text-indent: -9999px;
+    width: 157px;
+}
+
+#gigya-thank-you-screen .gigya-input-submit,
+#gigya-forgot-password-success-screen .gigya-input-submit,
+#gigya-email-verified-screen .gigya-input-submit,
+#gigya-reset-password-confirmation-screen .gigya-input-submit {
+    background-position: 0 -654px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#gigya-complete-registiration-screen .gigya-input-submit:hover,
+#gigya-register-screen .gigya-input-submit:hover {
+    background-position: -808px -78px;
+}
+
+#gigya-forgot-password-success-screen .gigya-input-submit:hover,
+#gigya-thank-you-screen .gigya-input-submit:hover,
+#gigya-email-verified-screen .gigya-input-subit:hover,
+#gigya-reset-password-confirmation-screen .gigya-input-submit:hover {
+    background-position: 0 -692px;
+}
+
+#gigya-register-screen .gigya-composite-control-checkbox {
+    margin-bottom: 7px;
+}
+
+#gigya-complete-registiration-screen .gigya-composite-control-checkbox,
+#gigya-forgot-password-screen .gigya-composite-control-label-top {
+    padding-top: 21px;
+}
+
+#gigya-email-verification-screen .gigya-composite-control-label-top {
+    padding-top: 7px;
+}
+
+#gigya-register-screen .gigya-composite-control-submit {
+    margin-top: 53px;
+}
+
+#gigya-email-verification-screen .ol_inline,
+#gigya-complete-registiration-screen .ol_inline,
+#gigya-register-screen .ol_inline,
+#gigya-thank-you-screen .ol_inline,
+#gigya-link-account-screen .ol_inline {
+    margin-top: 20px;
+}
+
+#gigyaContainer .ol_inline a {
+    color: #333;
+}
+
+/* HACKS FOR GIGYA */
+.gigya-screen-dialog {
+    display: none !important;
+}
+
+/* profile styles*/
+#gigya-change-password-screen,
+#gigya-update-profile-screen {
+    padding: 0 0 20px;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+#gigya-update-profile-screen div.gigya-photo-upload {
+    height: 63px;
+    width: 300px;
+}
+
+#gigya-update-profile-screen div.gigya-photo-upload-image {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+    border: solid 1px #eee;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    float: left;
+    height: 64px;
+    margin-right: 8px;
+    width: 64px;
+}
+
+#gigya-update-profile-screen div.gigya-photo-upload-button {
+    -webkit-background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;
+    -moz-background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;
+    border: 1px solid #CECECE;
+    border-radius: 4px 4px 4px 4px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0 8px 8px 0;
+    padding: 0 12px;
+}
+
+#gigya-update-profile-screen div.gigya-photo-upload-path {
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+
+#gigya-change-password-screen .gigya-input-submit,
+#gigya-update-profile-screen .gigya-input-submit,
+#gigya-update-profile-screen .gigya-input-delete-account {
+    background: url(/_ui/images/profile/sprite_profile.png) no-repeat;
+    background-position: 0 -163px;
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 137px;
+}
+
+#gigya-change-password-screen .gigya-input-submit:hover,
+#gigya-update-profile-screen .gigya-input-submit:hover {
+    background-position: 0 -195px;
+}
+
+#gigya-update-profile-screen .gigya-composite-control .gigya-label,
+#gigya-change-password-screen .gigya-composite-control .gigya-label {
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+#gigya-update-profile-screen .gigya-input-delete-account {
+    background-position: -150px -163px;
+    margin-top: 20px;
+}
+
+#gigya-update-profile-screen .gigya-input-delete-account.inline {
+    margin-top: 0;
+}
+
+#gigya-update-profile-screen .gigya-input-delete-account:hover {
+    background-position: -150px -195px;
+}
+
+/** change password button **/
+.change-password { display: none !important; }
+.can-change-password .change-password { display: block !important; }
+
+/** ie8 compatibility **/
+body.ie8 #gigyaMask{
+    background: #444;
+}
+
+.ie8 .gigya-layout-header{
+    background: #D2F1FC;
+    height: auto;
+    margin: -35px 0 15px!important;
+}
+
+/* ie* compatibility **/
+body.ie .gigya-screen {
+    width: 645px;
+    border: solid 10px #181818;
+    background: #fff;
+    padding: 10px;
+}
+
+body.ie .gigya-layout-row .gigya-error-display{
+    display: none;
+}
+
+.ie .gigya-input-submit,
+.ie .gigya-input-submit:hover{
+    filter:none;
+    border-bottom: 0;
+}
+
+.ie h1.gigya-header {
+    color: #ffffff;
+}.modal-box .inner,
+.modal-box .footer {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 11px;
+    background: url(/_ui/images/_components/auth/bodyPopup_bg.png) 0 0 no-repeat;
+}
+
+.modal-box .footer {
+    background-position: -1202px 0;
+}
+
+.modal-box .body {
+    background: url(/_ui/images/_components/auth/bodyPopup_bg.png) -601px 0 repeat-y;
+    padding: 20px 40px 15px
+}
+
+.modal-box .question {
+    background: url(/_ui/images/_components/auth/question_mark.png) 0 0 no-repeat;
+    padding: 6px 0 0 156px;
+    min-height: 109px;
+    overflow: hidden;
+}
+
+.modal-box h1 {
+    font: bold 16px/20px Arial;
+    color: #000;
+    margin-top: 0;
+}
+
+.modal-box h1 span {
+    display: inline;
+    color: #000;
+}
+
+.modal-box p {
+    margin: 7px 0;
+    color: #000;
+    text-align: left;
+}
+
+/**** button styles from auth-1.4/default.css ****/
+.modal-box .btn{
+    margin: 10px auto;
+    left: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal-box a.btn:link,
+.modal-box a.btn:link span,
+.modal-box a.btn:visited,
+.modal-box a.btn:visited span{
+	background: 	transparent url('/_ui/images/_components/auth/btns.png') 0 0 no-repeat;
+	font: 			bold 12px/26px Arial;
+	display: 		block;
+    float: 			left;
+    height: 		26px;
+    color:			#333;
+}
+.modal-box a[href="#Cancel"].btn:link{background-position: 0 -234px;}
+.modal-box a.btn:link{padding-left: 12px; margin-right: 10px;}
+.modal-box a.btn:link span{
+	background-position:0 -26px;
+	background-repeat: 	repeat-x;
+	min-width:			95px;
+}
+.modal-box a[href="#Cancel"].btn:link span{background-position: 0 -260px;}
+.modal-box a.btn:link span.right-edge{
+	background-position:0 -52px;
+	min-width: 			12px;
+	width:				12px;
+	background-repeat: 	no-repeat;
+}
+.modal-box a[href="#Cancel"].btn:link span.right-edge{background-position: 0 -286px;}
+
+.modal-box a.btn:hover{background-position: 0 -78px;}
+.modal-box a.btn:hover span{color: #009aec; background-position: 0 -104px;}
+.modal-box a.btn:hover span.right-edge{background-position: 0 -130px;}
+
+.modal-box a[href="#Cancel"].btn:hover{background-position: 0 -312px;}
+.modal-box a[href="#Cancel"].btn:hover span{background-position: 0 -338px;}
+.modal-box a[href="#Cancel"].btn:hover span.right-edge{background-position: 0 -364px;}
+
+.modal-box a.btn:active, .modal-box a[href="#Cancel"].btn:active{background-position: 0 -156px;}
+.modal-box a.btn:active span, .modal-box a[href="#Cancel"].btn:active span{background-position: 0 -182px;}
+.modal-box a.btn:active span.right-edge, .modal-box a[href="#Cancel"].btn:active span.right-edge{background-position: 0 -208px;}
+/**** END button styles from auth-1.4/default.css ****/
+/*
+moved to fbcglobal.css & fox.shows.global.css
+#headerLogin {
+	position: absolute;
+	top: 13px;
+	right: 154px;
+}
+#headerLogin li {
+	display:none;
+	float:left;
+}
+#headerLogin li a {
+	font-size:12px;
+	color:white;
+}
+#headerLogin li span {
+	display: inline-block;
+	margin: 0 8px;
+	color: #484848;
+}
+#headerLogin li.logIn span {
+	display:none;
+}
+#headerLogin li.signUp,
+#headerLogin li.logIn {
+	display:block;
+}
+body.authenticated #headerLogin li {
+	display:block;
+}
+body.authenticated #headerLogin li.signUp,
+body.authenticated #headerLogin li.logIn {
+	display:none;
+}
+*/
+
+#colorbox {
+    padding: 20px !important;
+    width: 690px !important;
+    border: 0;
+    outline: none;
+}
+
+#colorbox h1, #colorbox h2, #colorbox h3 {
+    float: none;
+    width: auto;
+}
+
+#modalWindow button {
+	cursor:pointer;
+}
+
+/*
+ * BACKGROUNDS
+ */
+#modalWindow .header,
+#modalWindow .message,
+#modalWindow .message div div.close a,
+#modalWindow div.steps li,
+div.infiniteCarousel div.pagination a,
+div.infiniteCarousel div.slider div.group li,
+#modalWindow #recoverPasswordStart button {
+	background:url(/_app/components/auth-2.0/foxIDSprite.png) no-repeat left top transparent;
+}
+
+/*
+ * MODAL WINDOW
+ */
+.auth-modal #cboxContent,
+.auth-modal #cboxWrapper {
+	padding: 0;
+}
+.auth-modal #cboxWrapper {
+	padding: 10px;
+    width: auto !important;
+    height: auto !important;
+}
+
+.auth-modal #cboxLoadedContent {
+	margin-bottom:0;
+}
+#modalWindow * {
+	color:black;
+}
+#modalWindow {
+	background-color:white;
+	position:relative;
+	float:left;
+}
+#header #modalWindow {
+	display:none;
+}
+.auth-modal #cboxLoadedContent #modalWindow {
+	display:block;
+}
+.auth-modal #cboxClose {
+	right:-10px;
+}
+#modalWindow .header {
+	background: black url(/_ui/images/_components/auth/auth_sprite.png?v=3) no-repeat 21px -389px;
+	height:45px;
+	width: 665px;
+}
+#modalWindow .header div {
+	position:relative;
+}
+#modalWindow .header .btn-back {
+	display: none; /* toggled with jQuery */
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	width: 77px;
+	height: 30px;
+	line-height: 0;
+	text-indent: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	background: url('/_ui/images/_components/auth/auth_sprite.png') no-repeat -189px -90px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#modalWindow .header .btn-back:hover{
+	background-position: -189px -129px;
+}
+
+#modalWindow .header div h1 {
+	color:white;
+	text-align:center;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	line-height:45px;
+	font-size:16px;
+}
+#modalWindow .header div div.close {
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+#modalWindow .message {
+	background-position:bottom left;
+	position:relative;
+	overflow:auto;
+	min-height:60px;
+}
+#modalWindow .message div.notification-wrapper {
+	background-color:#d2f1fc;
+	margin-bottom:2px;
+	min-height:60px;
+	width: 665px;
+}
+#modalWindow .message.error div {
+	background-color:#fefacd;
+}
+#modalWindow .message div p {
+	color: #333;
+	padding: 14px 60px 10px 20px;
+	font-size: 11px;
+	line-height: 18px;
+}
+#modalWindow .message div p span {
+	font-weight:bold;
+	display:block;
+	font-size:16px;
+}
+#modalWindow .message div p a {
+	font-weight:bold;
+	color:#1fb7f1;
+}
+#modalWindow .message div div.close {
+	height:auto;
+	padding:0px;
+	position:absolute;
+	top:17px;
+	right:0px;
+	text-indent:-9999px;
+	display:none;
+}
+#modalWindow .error div div.close {
+	display:block;
+}
+#modalWindow .message div div.close a {
+	display:block;
+	width:46px;
+	height:25px;
+	background-position:-1370px -9px;
+}
+#modalWindow .report-issue {
+	color: #009AEC;
+}
+
+/*
+ * MODAL WINDOW - STEPS
+ */
+#modalWindow div.steps {
+	overflow:auto;
+	width: 665px;
+}
+#modalWindow div.steps ul {
+	margin:17px 15px 0;
+	height:75px;
+}
+#modalWindow div.steps li {
+	float:left;
+	width:50%;
+	height:73px;
+	text-indent:-9999px;
+}
+#modalWindow div.steps li.step-1.active,
+#modalWindow div.steps li.one.active {
+	background-position:3px top;
+}
+#modalWindow div.steps li.step-1,
+#modalWindow div.steps li.one {
+	background-position:3px -73px;
+}
+#modalWindow div.steps li.step-2.active,
+#modalWindow div.steps li.two.active {
+	background-position:-314px -73px;
+}
+#modalWindow div.steps li.step-2,
+#modalWindow div.steps li.two {
+	background-position:-314px top;
+}
+
+#modalWindow .step-content { display: none; }
+#modalWindow .step-content.active { display: block; }
+
+/*
+ * MODAL WINDOW - CONTENT
+ */
+#modalWindow .content {
+	min-height: 350px;
+    padding-bottom: 10px;
+}
+.foxid .screens {
+	padding:10px;
+	position: relative;
+}
+.foxid .screens iframe {
+	width: 100%;
+	height: 335px;
+}
+.foxid .screens iframe.janrain.signin {
+    height: 300px;
+}
+
+#modalWindow iframe.janrain {
+    width: 645px;
+    /*height: 335px;*/
+}
+
+#modalWindow #so-awkward {
+	text-align: center;
+	padding: 20px;
+}
+#modalWindow #so-awkward h1 {
+	font-weight: bold;
+	font-size: 29pt;
+	text-align: center;
+}
+#modalWindow #so-awkward h2 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 15pt;
+}
+#modalWindow #so-awkward p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+#modalWindow #so-awkward .error_message {
+	font-weight: bold;
+}
+
+/*
+ * Create Success
+ */
+#create_success {
+	margin: -10px;
+	color: #333;
+}
+
+#create_success *{
+	color: #333;
+}
+
+#create_success h1 {
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #d2f1fc  url('/_ui/images/_components/auth/bgIntro.png') repeat-x 0 100%;
+}
+
+#create_success p {
+	padding: 15px 75px 15px 40px;
+	overflow: hidden;
+}
+
+#create_success dl {
+	position: relative;
+	width: 495px;
+	height: 30px;
+	margin: 0 0 0 50px;
+	padding: 20px;
+	background: #eee;
+	border-radius: 6px;
+	border: 1px solid #e6e6e6;
+}
+
+#create_success .display-name {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+#create_success .display-name-value {
+	position: absolute;
+	left: 20px;
+	top: 38px;
+	margin: 0;
+}
+
+#create_success .email-address {
+	position: absolute;
+	left: 250px;
+	top: 20px;
+}
+
+#create_success .email-address-value {
+	position: absolute;
+	left: 250px;
+	top: 38px;
+	margin: 0;
+}
+
+#create_success .continue {
+	float: right;
+	width: 120px;
+	height: 30px;
+	margin: -10px 0 20px;
+	padding: 0;
+	border: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	background: url('/_ui/images/_components/auth/auth_sprite.png?v=3') no-repeat -449px -248px;
+}
+
+#create_success .continue:hover {
+	background-position: -449px -280px;
+}
+
+
+
+/*
+* Unable to Log In
+*/
+
+#modalWindow .message div.utl-message p {
+	font-weight: bold;
+	padding: 20px 60px 20px 20px;
+	font-size: 16px;
+}
+
+#modalWindow .screens .utl-row {
+	width: 100%;
+}
+
+#modalWindow .screens p.utl-text {
+	font-size: 12px;
+	color: #333;
+	padding: 20px 30px;
+}
+
+#modalWindow .screens .utl-buttonbox {
+	margin-right: 50px;
+	float: right;
+}
+
+#modalWindow .screens .utl-buttonbox a {
+	height: 34px;
+	float: right;
+	cursor: pointer;
+	display: block;
+}
+
+#modalWindow .screens .utl-buttonbox a.utl-closebutton {
+	background: url('/_app/components/auth-2.0/foxIDSprite.png') no-repeat 0 -654px;
+	width: 105px;
+}
+
+#modalWindow .screens .utl-buttonbox a.utl-closebutton:hover {
+	background-position: 0 -692px;
+}
+
+#modalWindow .screens .utl-buttonbox a.utl-tryagainbutton {
+	background: url('/_app/components/auth-2.0/foxIDSprite.png') no-repeat -976px -149px;
+	width: 107px;
+}
+
+#modalWindow .screens .utl-buttonbox a.utl-tryagainbutton:hover {
+	background-position: -1090px -149px;
+}
+
+/* style hacks for IE 7 and below */
+
+#cboxContent {
+	*margin-top: -20px;
+}
+
+/*
+ * MODAL - Recover Password Start
+ */
+ 
+#modalWindow #recoverPasswordStart {
+	padding:30px;
+}
+#modalWindow #recoverPasswordStart p {
+	margin-bottom:10px;
+}
+#modalWindow #recoverPasswordStart button {
+	background-position: 0 -654px;
+	border:0px;
+	width: 105px;
+	height: 34px;
+	text-indent:-9999px;
+	margin-left:460px;
+	margin-top:30px;
+}
+#modalWindow #recoverPasswordStart button:hover {
+	background-position: 0 -692px;
+}
+div.infiniteCarousel {
+	position:relative;
+}
+div.infiniteCarousel div.pagination a {
+	position:absolute;
+	display:block;
+	text-indent:-9999px;
+	top:0px;
+}
+div.infiniteCarousel div.pagination a.btnPrevious {
+	left:0px;
+}
+div.infiniteCarousel div.pagination a.btnNext {
+	right:0px;
+}
+div.infiniteCarousel div.slider {
+	overflow:hidden;
+}
+div.infiniteCarousel div.slider div.items {
+	width:10000px !important;
+}
+div.infiniteCarousel div.slider div.group {
+	float:left;
+}
+div.infiniteCarousel div.slider div.group li {
+	text-align:center;
+}
+#mvpdSelector {
+	width:630px;
+	height:254px;
+	margin:0px;
+}
+#mvpdSelector div.pagination a {
+	width:33px;
+	height:255px;
+	background-position: -640px -319px;
+}
+#mvpdSelector div.pagination a:hover {
+	background-position: -683px -319px;
+}
+#mvpdSelector div.pagination a.btnNext {
+	background-position: -720px -319px;
+}
+#mvpdSelector div.pagination a.btnNext:hover {
+	float:right;
+	background-position: -758px -319px;
+}
+#mvpdSelector div.slider {
+    position: relative;
+	margin-left: 25px;
+	width: 585px;
+	height: 254px;
+}
+#mvpdSelector div.slider div.group {
+	width:174px;
+	height:576px;
+	margin-right:6px;
+}
+#mvpdSelector div.slider div.group ul {
+	margin-top:54px;
+}
+
+/** mvpd logos **/
+
+#mvpdSelector li {
+	width:174px;
+	height:70px;
+	margin:0 0 5px 10px;
+	text-align: center;
+	background: url(/_ui/images/_components/auth/bgSelectedItem.png) no-repeat;
+    cursor: pointer;
+}
+
+#mvpdSelector li.empty {
+	background: none;
+}
+
+#mvpdSelector li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+div#player > div.loading {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:620px;
+    height:350px;
+    background: #000 url('/_ui/images/loaders/preloader.gif') 50% 50% no-repeat;
+    text-align: center;
+    line-height: 490px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+div#player > div.loading span {
+    padding: 5px;
+}
+
+#cboxContent { padding: 0; }
+#cboxOverlay { z-index: 999999; }
+#colorbox { z-index: 1000000; }
+
+/** screen sizes **/
+#MVPDsupported { width:500px; height: 400px; }
+#oops, #auth-error { width:665px; height: 400px; }
+#dont-see-provider { height: 494px; }
+#dont-see-provider2 { width:500px; height: 400px; }
+#get-access { width:500px; height: 400px; }
+#loader { width:500px; height: 400px; }
+#logoutPopup { width:500px; height: 400px; }
+#message-sent { width:500px; height: 400px; }
+#message-sent2 { width:500px; height: 400px; }
+#no-tv-provider { width:585px; height: 400px; }
+#select-provider { width:600px; height: 400px; }
+#self-pass { width:665px; height: 400px; }
+
+
+
+/****/
+.screen-loading {
+	cursor: progress;
+}
+#please-sign-in-again {
+    text-align: center;
+}
+
+#please-sign-in-again h1 {
+    text-align: center;
+    font-size: 21px;
+    margin: 20px;
+}
+
+#modalWindow a {
+	text-decoration:none;
+}
+
+#modalWindow a:hover {
+	text-decoration:underline;
+}
+
+/** TODO: clean up **/
+/********** no-tv-provider **********/
+
+#no-tv-provider {
+    background: #000;
+    color: #FFF;
+    padding: 20px 40px;
+}
+
+#no-tv-provider h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+#no-tv-provider .featured-clip{
+	float: 			right;
+	padding-left: 	20px;
+	margin: 		12px 0;
+	border-left: 	1px solid #000;
+	width: 			207px;
+}
+#no-tv-provider .featured-clip .suggestion-clips{margin: 0 0 8px 0;}
+#no-tv-provider .featured-clip>a{font-weight: bold;}
+#no-tv-provider h4{font-weight: bold; margin-top: 12px; overflow: hidden;}
+#no-tv-provider p{
+    overflow: hidden;
+    margin: 5px 0 5px;
+    line-height: 20px;
+}
+#no-tv-provider .btn{float: none; left: 0; margin: 3px 0;}
+#no-tv-provider .btn li{right: 0}
+#no-tv-provider .btn a{
+	background: 	transparent url('/_ui/images/_components/auth/mvpd_nav_bg.png') 0 -255px no-repeat;
+	padding:		1px 18px;
+}
+
+#no-tv-provider > ul.mvpd-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 220px;
+}
+
+#no-tv-provider > ul.mvpd-nav li a {
+    display: inline-block;
+    margin: 0;
+}
+
+/********** suggestion-clips **********/
+.suggestion-clips, .suggestion-clips div{
+	background: 	transparent url('/_ui/images/_components/auth/show_bg.png') -202px 0 repeat-y;
+	cursor: 		pointer;
+}
+.suggestion-clips{
+	padding-top: 	3px;
+	width: 			202px;
+	float: 			left;
+	background-repeat: no-repeat;
+	margin: 		15px 5px;
+}
+.suggestion-clips div{padding: 10px; width: 182px; height: 150px}
+.suggestion-clips div div{height: 100px; width: 182px; padding: 0; background: #fff; position: relative; margin-bottom: 5px}
+.suggestion-clips div div img{z-index: 1; position: absolute; top: 0; left: 0; height: 100px; width: 182px;}
+
+.suggestion-clips h3{
+    color: #0079B9;
+    font-weight: bold;
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.suggestion-clips, .suggestion-clips div.bottom-border{background-position: 1px 0;}
+.suggestion-clips div.bottom-border{background-position: -404px 0; height: 3px; padding: 0px; width: 202px;}
+
+.suggestion-clips .featured{
+	position:		absolute;
+	background: 	transparent url('/_ui/images/_components/auth/featured.png') -46px 0 repeat-y;
+	width:			108px;
+	height:			22px;
+	bottom:			0;
+	left:			0;
+	z-index: 		2;
+}
+.suggestion-clips .play{
+	position:		absolute;
+	background: 	transparent url('/_ui/images/css_sprites/gui.png') -323px 0 no-repeat;
+	width:			35px;
+	height:			22px;
+	left:			140px;
+	top:			10px;
+	z-index:		2;
+}
+.suggestion-clips .play:hover{background-position: -364px 0;}
+
+#no-tv-provider .suggestion-clips div p,
+#no-tv-provider .suggestion-clips div p *{
+	color: 			#666;
+    font-size: 11px;
+    line-height: 	12px;
+    margin: 		5px 0 2px;
+    text-align: 	left;
+}
+.suggestion-clips a.link {
+    font-size: 12px;
+}
+
+/** hide the steps and notifications when viewing the 'dont-see-provider' screen **/
+
+.screen-dont-see-provider .notifications-container,
+.screen-dont-see-provider .steps { display: none; }
+
+/* Updates to Dont'have a provider screen */
+
+
+#no-tv-provider.video-auth .suggestion-clips,
+#no-tv-provider.video-auth .suggestion-clips div {
+	background: none;
+}
+
+#no-tv-provider.video-auth .featured-clip{
+	float: right;
+	padding-left: 35px;
+	margin: 12px 0;
+	border-left: 1px solid #E5E5E5;
+	width: 255px;
+}
+
+#no-tv-provider.video-auth {
+    background: #fff;
+    color: #333;
+    padding: 20px 40px;
+}
+
+#no-tv-provider.video-auth  .featured-clip .link {
+	display: none;
+}
+
+#no-tv-provider.video-auth a {
+	display: block;
+	margin-bottom: 20px;
+	color: #009aec;
+	font-size: 11px;
+}
+
+#no-tv-provider.video-auth a:hover {
+	text-decoration: underline;
+}
+
+#no-tv-provider.video-auth .suggestion-clips h3 {
+	color: #2790f5;
+	padding: 5px 0 3px;
+	height: 1.5em;
+}
+
+#no-tv-provider.video-auth .suggestion-clips .featured{
+	background: transparent url('/_ui/images/_components/auth/featured.png')  no-repeat -244px 0;
+	bottom: auto;
+	left: 0;
+	top: -15px;
+	width: 180px;
+}
+
+#no-tv-provider.video-auth .suggestion-clips div div{
+	padding-top:  5px;
+}
+
+#no-tv-provider.video-auth .suggestion-clips .play {
+	top: 15px;
+}
+
+#no-tv-provider.video-auth .suggestion-clips div div img{
+	top: 5px;
+}
+
+/**** signin overlay ****/
+
+#player .signin-overlay,
+#player .signin-overlay .backdrop,
+#player .signin-overlay .content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+#player .signin-overlay .content {
+    color: #FFF;
+    text-align: center;
+}
+
+#showVideoPlayerComponent #player .signin-overlay .content h2 {
+	width: 620px;
+	margin: 80px 0 40px;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+	color: #fafafa;
+	white-space: normal;
+}
+
+#player .signin-overlay .content p {
+	margin: 5px 10px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#player .signin-overlay .content button {
+    padding: 10px;
+}
+
+#player .signin-overlay .backdrop {
+    background: #000000;
+    opacity: 0.8;
+}
+
+#player .signin-overlay .content { z-index: 200; }
+#player .signin-overlay .backdrop { z-index: 100; }
+
+
+#player .btn {
+    background: #fff;
+    color: #555 !important;
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
+    padding: 15px 75px 12px 75px;
+    display: inline-block;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+#player a.btn:hover {
+    color: #868686 !important;
+    text-decoration: none;
+}
+
+#player .modalPadlock {
+	width: 15px;
+	height: 16px;
+	background: transparent url('/_ui/images/_components/auth/mvpd_nav_bg.png?v=2')  no-repeat 0 -300px;
+}
+
+/** help links **/
+
+
+#modalWindow .video-auth .help-links {
+	text-align: center;
+	font-size: 11px;
+	color: #888888;
+}
+
+#modalWindow .video-auth .help-links a {
+	text-align: center;
+	font-size: 11px;
+	margin: 0 5px;
+	color: #009aec !important;
+}
+
+
+/** screen: select-provider **/
+
+#modalWindow .content {
+    padding-bottom: 0 !important;
+}
+
+#select-provider {
+    width: 600px;
+    height: 270px;
+    position: relative;
+    padding: 10px 0 0 20px;
+}
+
+#select-provider h3 {
+    margin: 0 0 0 15px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    float:none;
+}
+
+#select-provider > ul {
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+}
+
+#no-tv-provider > ul.mvpd-nav li,
+#select-provider > ul li {
+    float: left;
+}
+
+#select-provider > ul li a {
+    color: #009aec;
+    font-size: 11px;
+}
+
+#no-tv-provider > ul li span,
+#select-provider > ul li span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+#select-provider li span {
+	display:none;
+}
+
+div.toolTip a {
+	display:block;
+	margin-top:5px;
+}
+
+div.toolTip a:hover {
+	font-weight:bold;
+}
+
+#select-provider .login-problems {
+	text-align: center;
+	color: gray;
+	font-size: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+}
+
+/** screen: please-sign-in-again **/
+
+#please-sign-in-again {
+    width:500px;
+    height: auto;
+    margin: 10px auto 0;
+    padding-bottom: 30px;
+}
+
+#please-sign-in-again h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+#please-sign-in-again .description {
+    margin: 0 0 20px;
+}
+
+#please-sign-in-again .provider {
+    display: block;
+	width: 174px;
+	height: 70px;
+	/*padding-top: 15px;*/
+	margin: 0 auto 20px;
+	text-align: center;
+	background: url(/_ui/images/_components/auth/bgSelectedItem.png) no-repeat;
+}
+
+#please-sign-in-again button {
+	float: none;
+	width: 97px;
+	height: 29px;
+	display: block;
+	margin: 0 auto 30px;
+	padding: 0;
+	border: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(/_ui/images/_components/auth/auth_sprite.png) no-repeat -189px -168px;
+}
+
+#please-sign-in-again button:hover {
+	background-position: -189px -208px;
+}
+
+/** screen: sign-in **/
+
+#sign-in {
+    position: relative;
+    width: 665px;
+    height: auto;
+    padding: 10px 0;
+}
+
+#sign-in iframe#mvpdframe {
+	margin: 0 auto;
+}
+
+/** loading popup **/
+
+#sign-in .information-loader {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -184px;
+	width: 368px;
+	min-height: 120px;
+	background: white;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #666;
+	box-shadow: 0 2px 5px #000;
+}
+
+#sign-in .information-loader h3 {
+	padding: 8px 0 8px;
+	background: #d2f1fc  url('/_ui/images/_components/auth/bgIntro.png') repeat-x 0 100%;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#sign-in .information-loader img {
+	margin-right: 20px;
+	float: left;
+}
+
+#sign-in .information-loader p {
+	padding: 20px 0;
+	width: 290px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 35px;
+	font-weight: bold;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* Confirm Logout */
+
+/** screen: select-provider **/
+
+#confirm-logout {
+    width: 600px;
+    height: 270px;
+    position: relative;
+    padding: 10px 0 0 20px;
+}
+
+#confirm-logout h3 {
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Error */
+
+#oops h1,
+#auth-error h1,
+#self-pass-expired h1 {
+	padding: 25px 22px;
+	margin-bottom: 25px;
+	background: #fdf59b  url('/_ui/images/_components/auth/bgNotice.png') repeat-x 0 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+
+#auth-error .provider {
+    display: block;
+	width: 174px;
+	height: 70px;
+	/*padding-top: 15px;*/
+	margin: 0 auto 10px;
+	text-align: center;
+	background: url(/_ui/images/_components/auth/bgSelectedItem.png) no-repeat;
+    cursor: default;
+}
+
+#oops p,
+#auth-error p,
+#self-pass-expired p {
+	padding: 0 45px 15px;
+	text-align: center;
+}
+
+#auth-error ul {
+	padding-top: 15px;
+	text-align: center;
+}
+#auth-error ul li {
+	padding: 0 10px;
+	display: inline;
+	border-left: 1px solid #d2d6d9;
+}
+
+#auth-error ul li:first-child {
+	border: none;
+	padding-left: 3px;
+}
+
+#auth-error ul li a {
+	margin-left: 3px;
+    color: #009aec;
+    font-size: 11px;
+}
+#oops .error-message a,
+#auth-error .error-message a {
+	color: #009aec;
+}
+
+/** loading popup is hidden by default **/
+#sign-in .information-loader { display: none; }
+#sign-in.loading .information-loader { display: block; }
+
+
+/** AdobePass Toggle **/
+#adobepass-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1500;
+    background: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#adobepass-toggle.prod {
+    background: red;
+}
+
+/** custom styles for screen_set-c **/
+.signin-overlay .content h2 {
+    font-size: 1.5em;
+}
+
+body.auth_screen_set-a .signin-overlay .content h2 {
+    margin-top: 45px !important;
+    margin-bottom: 40px;
+}
+
+body.auth_screen_set-a .signin-overlay .content .description {
+    text-align: left !important;
+    margin: 0 30px 5px 30px !important;
+}
+
+body.auth_screen_set-a .signin-overlay .content .access {
+    margin-top: 35px !important;
+}
+
+body.auth_screen_set-a .signin-overlay .content .delay {
+    margin-top: 10px;
+    clear: both;
+}
+
+body.auth_screen_set-a .btn {
+    margin: 10px auto !important;
+}
+
+/** custom styles for screen_set-b **/
+
+body.auth_screen_set-b .signin-overlay .content h2 {
+    margin-top: 45px !important;
+    margin-bottom: 40px;
+}
+
+body.auth_screen_set-b .signin-overlay .content .description {
+    text-align: left !important;
+    margin: 0 30px 5px 30px !important;
+}
+
+body.auth_screen_set-b .signin-overlay .content .access {
+    margin-top: 35px !important;
+}
+
+body.auth_screen_set-b .signin-overlay .content .delay {
+    margin-top: 10px;
+    clear: both;
+}
+
+body.auth_screen_set-b .btn {
+    margin: 10px auto !important;
+}
+
+/* self pass */
+#self-pass {
+    display: table;
+}
+
+#self-pass h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#self-pass .highlight {
+    vertical-align: middle;
+    background-color: #d2f1fc;
+    border-bottom: 1px solid #dddddd;
+    padding: 15px;
+}
+
+#self-pass .highlight h3 {
+    line-height: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+#self-pass .highlight button {
+    float: right;
+}
+
+#self-pass .highlight .provider {
+    display: inline-block;
+    background: url('/_ui/images/_components/auth/auth_sprite.png') no-repeat -297px -248px;
+    width: 142px;
+    height: 68px;
+    float: left;
+}
+
+#self-pass .copy {
+    text-align: left;
+    padding: 15px 30px;
+}
+
+#self-pass .copy h3 {
+    margin-bottom: 10px;
+}
+
+#self-pass .copy p {
+    font-size: 14px;
+}
+
+#self-pass .provider img {
+    position: relative;
+    left: -16px;
+    top: -1px;
+}
+
+#self-pass button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    background-image: url('/_ui/images/_components/auth/auth_sprite.png');
+    background-repeat: no-repeat;
+}
+
+#self-pass .tooltip {
+    color: #009dce;
+}
+
+#self-pass .tooltip:hover {
+    color: #009dce !important;
+    text-decoration: none;
+}
+
+#self-pass .btn-signin {
+    position: relative;
+    top: 20px;
+    background-position: -297px -168px;
+    width: 117px;
+    height: 29px;
+}
+
+#self-pass .btn-signin:hover {
+    background-position: -297px -208px;
+}
+
+#self-pass .btn-selfpass {
+    margin: 15px 0;
+    background-position: -449px -90px;
+    width: 193px;
+    height: 29px;
+}
+
+#self-pass .btn-selfpass:hover {
+    background-position: -449px -129px;
+}
+
+#modalWindow .back {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    background: transparent url('/_ui/images/_components/auth/auth_sprite.png') no-repeat -188px -90px;
+    width: 78px;
+    height: 30px;
+    border: none;
+}
+
+#modalWindow .back:hover {
+    background-position: -188px -129px;
+}#authModuleContainer {
+	overflow:auto;
+	clear:both;
+	margin-top:-12px;
+}
+
+#mvpdLogo {
+	float:left;
+	width:71px;
+	height:51px;
+	margin:0 10px 20px 0;
+}
+
+#mvpdLogoVideoPlayer {
+	position: relative;
+	float: left;
+	width: 60px;
+	height:40px;
+	margin: 6px 5px 0 0;
+}
+
+#mvpdLogoVideoPlayer a {
+	float: left;
+}
+
+#mvpdLogoVideoPlayer img {
+	height: 40px;
+	width: auto;
+	float: left;
+}
+
+#authModule {
+	padding: 7px 7px 9px 7px;
+	margin-bottom:20px;
+}
+
+#authModule p {
+    margin-right: 10px;
+}
+
+span.lock {
+	display:block;
+}
+
+.msgLock {
+	width: 40px;
+	height: 31px;
+	float: left;
+	background: url(/_ui/images/css_sprites/authSprite.png);
+	overflow: hidden;
+	margin: 0 3px 0 0;
+}
+
+/** toggle between login & logout buttons **/
+#authModuleContainer .logout,
+#authModuleContainer.signed-in .login { display: none; }
+
+#authModuleContainer.signed-in .logout { display: inline; }
+
+/** only show the logo when we are signed in **/
+#mvpdLogo, #mvpdLogoVideoPlayer { display: none; }
+.signed-in #mvpdLogo, .signed-in #mvpdLogoVideoPlayer { display: block; }
+
+/** only show the links when we have an mvpd, and can activate **/
+#authModuleContainer .auth-module-links { display: inline; }
+
+/** tweak position for signed-in state **/
+.signed-in #authModule {
+	padding: 9px 7px;
+	margin: 0 0 10px 0;
+	float:left;
+	width:843px;
+	height:31px;
+}
+
+/** in most cases we want links to appear on a new line, but with the default screen set it should be inline **/
+#authModule .state-message { display: block; }
+.screen_set-default #authModule .state-message { display: inline; }.glee {
+	background-position: 0px -31px;
+}
+
+.raisinghope {
+	background-position: 0px 0px;
+}
+
+.trafficlight, .mobbed {
+	background-position: -349px -0px;
+}
+
+.fringe {
+	background-position: -349px -32px;
+}
+
+.americandad, .cops {
+	background-position: 0px -63px;
+}
+
+.americasmostwanted {
+	background-position: -349px -63px;
+}
+
+.bobsburgers {
+	background-position: 0px -94px;
+}
+
+.bones {
+	background-position: -349px -94px;
+}
+
+.cleveland {
+	background-position: 0px -125px;
+}
+
+.familyguy {
+	background-position: -349px -125px;
+}
+
+.house {
+	background-position: 0px -156px;
+}
+
+.kitchennightmares {
+	background-position: -348px -156px;
+}
+
+.MasterChef,.masterchef {
+	background-position: 0px -187px;
+}
+
+.thesimpsons {
+	background-position: -349px -187px;
+}	
+
+.dance {
+	background-position: 0px -218px;
+}
+
+.hellskitchen {
+	background-position: -353px -221px;
+}
+
+.breakingin {
+	background-position: 0px -94px;
+}
+
+.lietome {
+	background-position: -351px -262px;
+}
+
+.chicagocode {
+	background-position: 0px -294px;
+}
+
+.buried-treasure {
+	background-position: -353px -280px;
+}
+
+.in-the-flow {
+	background-position: 0 -284px;
+}
+/*0.08 s*/
+}
