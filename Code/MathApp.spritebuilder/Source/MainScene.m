@@ -55,7 +55,7 @@ static const NSInteger TOTAL_MATCHES = 64; //64 total equations/tiles
 /************************ tileTouched ******************/
 // called by ShapeTile or EquationTile whenever any tile is touched
 +(void)tileTouched {
-    NSLog(@"a tile is touched. querying every tile for selection status...");
+     NSLog(@"a tile is touched. querying every tile for selection status...");
 }
 /********************** selectDescriptor ********************/
 //Descriptor is clicked
