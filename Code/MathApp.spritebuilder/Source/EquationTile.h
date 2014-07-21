@@ -7,8 +7,9 @@
 //
 
 #import "CCNode.h"
+#import "MainScene.h"
 
 @interface EquationTile : CCNode
--(NSMutableString*)getImageNameFromKey:(NSNumber*)key;
+-(NSMutableString*)getEquationImageNameFromKey:(NSNumber*)key;
 -(void) changeNodeImage :(NSNumber*)keyVal;
 @end

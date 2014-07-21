@@ -7,18 +7,28 @@
 //
 
 #import "EquationTile.h"
+#import "MainScene.h"
 
 @implementation EquationTile {
-    CCSprite *_image;
+    CCSprite* _image;
+    CCButton* _tileButton;
 }
 
 -(void) changeNodeImage :(NSNumber*)keyVal {
-    NSMutableString* imageName = [self getImageNameFromKey:keyVal];
+    NSMutableString* imageName = [self getEquationImageNameFromKey:keyVal];
     _image.spriteFrame = [CCSpriteFrame frameWithImageNamed:imageName];
+    _tileButton.selected = false;
 }
 
+/********************** selectTile ********************/
+-(void)selectTile {
+    [MainScene tileTouched];
+    //NSLog(@"equation tile is selected!");
+}
+
+
 /********************** getImageNameFromKey ********************/
--(NSMutableString*) getImageNameFromKey :(NSNumber*)key {
+-(NSMutableString*) getEquationImageNameFromKey :(NSNumber*)key {
     NSString* folderName = @"Equations/";
     NSString* extension = @"_Eq.png";
     NSMutableString* equationName=[NSMutableString stringWithString:@""];

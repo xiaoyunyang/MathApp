@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCNodeColor.h"
+#import "CCNode.h"
+#import "MainScene.h"
 
-@interface Descriptor : CCNodeColor
+@interface Descriptor : CCNode
 
 @end

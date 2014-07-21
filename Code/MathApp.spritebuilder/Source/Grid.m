@@ -86,7 +86,7 @@ static const NSInteger GRID_SIZE_COL = 3;
 
     }
 
-    NSLog(@"after initializing grid: grid matrix (rows, cols) is (%d, %d)\n", [_gameboardArray count], [_gameboardArray[0] count]);
+    //NSLog(@"after initializing grid: grid matrix (rows, cols) is (%d, %d)\n", [_gameboardArray count], [_gameboardArray[0] count]);
     
 }
 

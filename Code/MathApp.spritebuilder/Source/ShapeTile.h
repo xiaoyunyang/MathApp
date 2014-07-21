@@ -7,12 +7,13 @@
 //
 
 #import "CCNode.h"
+#import "MainScene.h"
 
 @interface ShapeTile : CCNode
 //@property (nonatomic, assign) CCSprite* image;
 
 
--(NSMutableString*)getImageNameFromKey:(NSNumber*)key;
+-(NSMutableString*)getShapeImageNameFromKey:(NSNumber*)key;
 -(void) changeNodeImage :(NSNumber*)keyVal;
 
 @end

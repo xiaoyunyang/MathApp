@@ -8,12 +8,17 @@
 
 #import "MainScene.h"
 #import "Grid.h"
-#import "Descriptor.h"
 @implementation MainScene {
-    Grid *_grid;
-    Descriptor *_descriptor;
+    Grid* _grid;
+    
+    CCButton* _descButton;
+    CCSprite* _descExpression;
+    CCSprite* _descEqualSign;
+    CCSprite* _descValue;
+    
     CCLabelTTF *_score;
     CCLabelTTF *_timer;
+    
 }
 @synthesize _shapeArray = _shapeArray;
 @synthesize _equationArray = _equationArray;
@@ -24,15 +29,40 @@ static const NSInteger TOTAL_MATCHES = 64; //64 total equations/tiles
 
 -(void)didLoadFromCCB {
     // tell this scene to accept touches
-    self.userInteractionEnabled = TRUE;
+    self.userInteractionEnabled = true;
+    
+    //initialize descriptor parameters with everything cleared
+    [self clearDescriptor];
+    
+    
+
     [self createMatches];
     [_grid refreshGameboard:_shapeArray :_equationArray];
-    
 }
 
-// called on every touch in this scene
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+-(void)clearDescriptor {
+    _descButton.selected = false;
+    _descExpression.spriteFrame = NULL;
+    _descEqualSign.spriteFrame = NULL;
+    _descValue.spriteFrame = NULL;
 }
+
+-(void)showMatchInDescriptor {
+    _descButton.selected = true;
+    //_descExpression.spriteFrame = [CCSpriteFrame frameWithImageNamed:@""];
+}
+
+/************************ tileTouched ******************/
+// called by ShapeTile or EquationTile whenever any tile is touched
++(void)tileTouched {
+    NSLog(@"a tile is touched. querying every tile for selection status...");
+}
+/********************** selectDescriptor ********************/
+//Descriptor is clicked
+-(void)selectDescriptor {
+    NSLog(@"descriptor is clicked!");
+}
+
 
 /************************ createMatches ******************/
 //creates 2 arrays of random equations and equivalent shape key values. Key values will be
@@ -86,21 +116,28 @@ static const NSInteger TOTAL_MATCHES = 64; //64 total equations/tiles
     //NSLog(@"shape Array: %@\n", _shapeArray);
     //NSLog(@"equation Array: %@\n", _equationArray);
     
+    /****************** testing ****************/
+    //remove below code after testing clicking functionality
+    [_shapeArray replaceObjectAtIndex:0 withObject:[NSNumber numberWithInt:23]];
+    [_shapeArray replaceObjectAtIndex:1 withObject:[NSNumber numberWithInt:52]];
+    [_shapeArray replaceObjectAtIndex:2 withObject:[NSNumber numberWithInt:45]];
+    [_shapeArray replaceObjectAtIndex:3 withObject:[NSNumber numberWithInt:16]];
+    [_shapeArray replaceObjectAtIndex:4 withObject:[NSNumber numberWithInt:60]];
+    [_shapeArray replaceObjectAtIndex:5 withObject:[NSNumber numberWithInt:57]];
+    [_shapeArray replaceObjectAtIndex:6 withObject:[NSNumber numberWithInt:9]];
+    [_shapeArray replaceObjectAtIndex:7 withObject:[NSNumber numberWithInt:28]];
+
+    [_equationArray replaceObjectAtIndex:0 withObject:[NSNumber numberWithInt:28]];
+    [_equationArray replaceObjectAtIndex:1 withObject:[NSNumber numberWithInt:45]];
+    [_equationArray replaceObjectAtIndex:2 withObject:[NSNumber numberWithInt:23]];
+    [_equationArray replaceObjectAtIndex:3 withObject:[NSNumber numberWithInt:9]];
+    [_equationArray replaceObjectAtIndex:4 withObject:[NSNumber numberWithInt:60]];
+    [_equationArray replaceObjectAtIndex:5 withObject:[NSNumber numberWithInt:52]];
+    [_equationArray replaceObjectAtIndex:6 withObject:[NSNumber numberWithInt:57]];
+    /****************** ./testing ****************/
+    
+    
+    
 }
 
-
-/*
--(void)createTiles:(int)width:(int)height
-{
-    for (int i=1;i<=13;i++) {
-        Card* card = [Card alloc];
-        [card setBlack:true];
-        NSString* name = [NSString stringWithFormat:@"club%d.png",i];
-        [card initWithData:EClub:name:0:0:i:i:width:height];
-        [self.cardsArray addObject:card];
-        
-        [card release];
-        card = nil;
-    }
-*/
 @end

@@ -9,16 +9,13 @@
 #import <Foundation/Foundation.h>
 #include <stdlib.h>
 #import "CCNode.h"
-#import "Picture.h"
-#import "Inventory.h"
-#import "Descriptor.h"
 
 @interface MainScene : CCNode {
     NSMutableArray *_shapeArray; //size 8 matrix
     NSMutableArray *_equationArray; //size 7 matrix
 }
 
-
++(void)tileTouched;
 
 @property(nonatomic, copy, readwrite) NSMutableArray* _shapeArray;
 @property(nonatomic, copy, readwrite) NSMutableArray* _equationArray;
